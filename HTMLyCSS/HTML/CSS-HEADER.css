@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap');
+
+* {
+  font-family: 'Imbue', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin-right: 50px;
+  line-height: 55px;
+  font-size: 30px;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+}
+
+.login-area a {
+  margin-left: 10px;
+}
