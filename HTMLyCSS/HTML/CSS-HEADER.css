@@ -3,36 +3,55 @@
 
 * {
   font-family: 'Imbue', sans-serif;
+  box-sizing: border-box;
 }
-header {
+
+.flex-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.esp {
+  width: 40%;
+}
+
+.boton-head {
+  padding: 10px;
+  width: 150px;
+}
+
+.img-head {
   padding: 10px;
 }
 
-header ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/*BOTONES*/
+.btn-group1 {
+  color: white;
+  background-color: rgb(36, 56, 51);
+  font-size: 20px;
+  padding: 10px 40px;
+  border-radius: 30px;
+  margin-right: 40px;
+  border:0;
 }
 
-header li {
-  margin-right: 50px;
-  line-height: 55px;
-  font-size: 30px;
+.btn-group2 {
+  font-size: 20px;
+  padding: 10px 40px;
+  border-radius: 30px;
+  margin-right: 40px;
+  border:0;
 }
 
-header li:last-child {
-  margin-right: 0;
-}
+/*.btn-group button:hover {
+  background-color: initial;
+}*/
 
-header a {
-  color: #000;
-  text-decoration: none;
-}
-
-.login-area a {
-  margin-left: 10px;
+@media screen and (max-width: 768px) {
+  
 }
