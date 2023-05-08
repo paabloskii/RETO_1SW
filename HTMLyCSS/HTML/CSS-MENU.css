@@ -45,7 +45,6 @@
   width: 40px;
   margin-left: -20px;
   position: absolute;
-  margin-top: 5px;
   float: right;
 }
 
@@ -74,14 +73,12 @@
 
 .i1 {
   grid-column: 1 / span 4;
-  background-color: aliceblue;
-  grid-row: 2;
+  background-color: #243833;
 }
 
 /*-------------------------------------------------*/
 
 
-@media screen and (min-width: 768px) {
   .fot {
       display: flex;
       flex-direction: row;
@@ -100,7 +97,6 @@
 
   .col {
       flex-grow: 2;
-
   }
 
   .colcentral {
@@ -132,7 +128,7 @@
   }
 
   .txt {
-      font-size: 200%;
+      font-size: 300%;
   }
 
   .txtcentro {
@@ -173,6 +169,5 @@
   font-size: 700%;
 }
 
-}
 
 
