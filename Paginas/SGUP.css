@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap');
+
+* {
+  font-family: 'Imbue', sans-serif;
+  margin: 0;
+}
+
+/*-----------HEADER-----------*/
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 150px 400px auto 315px;
+  grid-template-rows: 135px auto;
+  box-shadow: 0px 0px 10px 0px;
+  height: 130px;
+}
+
+.mgtxt {
+  margin-left: 30px;
+}
+
+.mgdiv {
+  margin-top: 45px;
+  font-size: 30px;
+}
+
+.rightp {
+  margin-top: 40px;
+}
+
+.boton1 {
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  color: white;
+  background-color: rgb(36, 56, 51);
+}
+
+.boton2 {
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.imgces {
+  width: 40px;
+  margin-left: -20px;
+  position: absolute;
+  float: right;
+}
+
+@media screen and (max-width: 880px) {
+
+  .boton1 {
+    display: none;
+  }
+
+  .boton2 {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .imgces {
+    display: none;
+  }
+
+}
+
+/*------------BODY------------*/
+
+.posi {
+    padding-block: 53px;
+    background-image: url(../LOGIN/IMAGENES/fondo.jpg);
+}
+
+label {
+    font-size: 24px;
+}
+
+form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+    width: 450px;
+  }
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 95%;
+    font-size: 15px;
+  }
+
+input[type="submit"] {
+    background-color: #243833;
+    color: #fff;
+    padding: 10px 40px;
+    border-width: 1px;
+    border-color: #243833;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+  }
+
+input[type="checkbox"] {
+  margin-inline: 5px;
+  margin-block: 10px;
+}
+
+@media screen and (min-width: 1919px){
+  .posi {
+    padding-block: 58px;
+  }
+}
+
+/*-----------FOOTER-----------*/
+
+.fot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    z-index: 999;
+    background-color: #243833;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.col {
+    flex-grow: 2;
+}
+
+.colcentral {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.txprimero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.txtpeque {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.col1 {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.txt {
+    font-size: 300%;
+}
+
+.txtcentro {
+    font-size: xx-large;
+}
+
+.txtlegal {
+    font-size: x-large;
+}
+
+.txtlegal1 {
+    font-size: x-large;
+}
+
+
+.txt1 {
+    font-size: xx-large;
+}
+
+
+.logosfooter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.logoinsta {
+    width: 50px;
+    height: 50px;
+}
+
+.logowhats {
+    width: 50px;
+    height: 50px;
+}
+
+.barra {
+    font-size: 700%;
+}
