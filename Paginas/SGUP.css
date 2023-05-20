@@ -23,6 +23,17 @@ body > div {
 
 .mgtxt {
   margin-left: 30px;
+  text-decoration: none;
+  color: black;
+}
+.mgtxt:hover {
+  color: black;
+  text-decoration: none;
+  
+}
+.mgtxt:active {
+  color: black;
+  text-decoration: none;
 }
 
 .mgdiv {
@@ -41,6 +52,7 @@ body > div {
   margin-left: 20px;
   color: white;
   background-color: rgb(36, 56, 51);
+  font-size: 100%;
 }
 
 .boton2 {
@@ -49,8 +61,8 @@ body > div {
   border-radius: 30px;
   margin-left: 20px;
   margin-right: 40px;
+  font-size: 100%;
 }
-
 .imgces {
   width: 40px;
   margin-left: -20px;
