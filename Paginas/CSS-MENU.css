@@ -13,8 +13,18 @@
 
 .mgtxt {
   margin-left: 30px;
+  text-decoration: none;
+  color: black;
 }
-
+.mgtxt:hover {
+  color: black;
+  text-decoration: none;
+  
+}
+.mgtxt:active {
+  color: black;
+  text-decoration: none;
+}
 .mgdiv {
   margin-top: 45px;
   font-size: 30px;
@@ -31,6 +41,7 @@
   margin-left: 20px;
   color: white;
   background-color: rgb(36, 56, 51);
+  font-size: 100%;
 }
 
 .boton2 {
@@ -39,6 +50,7 @@
   border-radius: 30px;
   margin-left: 20px;
   margin-right: 40px;
+  font-size: 100%;
 }
 
 .imgces {
