@@ -10,17 +10,24 @@
 </head>
 <body>
     <div class="gridcontainer">
-        <div><img src="../LOGIN/IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></div>
+        <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
         <div class="mgdiv">
-          <a class="mgtxt">Menu</a>
+            <a class="mgtxt" href="MENU.html">Menu</a>
           <a class="mgtxt">Take Away</a>
-          <a class="mgtxt">About Us</a>
+          <a href="ABUS.html" class="mgtxt">About Us</a>
         </div>
         <div><a></a></div>
         <div class="rightp">
-          <button class="boton1">Sign in</button>
-          <button class="boton2">Sign up</button>
-          <img class="imgces" src="../LOGIN/IMAGENES/bolsa-de-la-compra.png">
+            <a href="SGIN.html" id="sign_in"><button  class="botonHeader">Sign in</button></a>
+            <a href="SGUP.html"  id="sign_up" ><button class="botonHeader">Sign up</button></a>
+            <div class="dropdown"  style="display: none;">
+                <button onclick="myFunction()" class="dropbtn">Perfil</button>
+                <div id="profile" class="dropdown-content">
+                  <a href="#datos">Datos</a>
+                  <a href="#logout">Cerrar Sesion</a>
+                </div>
+              </div>
+          <img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png">
         </div>
     </div>
     <div class="diven">

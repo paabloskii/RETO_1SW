@@ -5,51 +5,96 @@
   margin: 0;
 }
 
-/*-----------HEADER-----------*/
-
 .gridcontainer {
   display: grid;
   grid-template-columns: 150px 400px auto 315px;
   grid-template-rows: 135px auto;
-  box-shadow: 0px 0px 10px 0px;
-  height: 130px;
+  align-items: center;
 }
 
 .mgtxt {
   margin-left: 30px;
+  text-decoration: none;
+  color: black;
 }
-
+.mgtxt:hover {
+  color: black;
+  text-decoration: none;
+  
+}
+.mgtxt:active {
+  color: black;
+  text-decoration: none;
+}
 .mgdiv {
-  margin-top: 45px;
   font-size: 30px;
 }
 
 .rightp {
-  margin-top: 40px;
+display: flex;
+align-items: center;
+gap: 0.5rem;
 }
 
-.boton1 {
-  padding: 12px 35px;
-  border: 0;
-  border-radius: 30px;
-  margin-left: 20px;
-  color: white;
+.rightp a:first-child>button{
   background-color: rgb(36, 56, 51);
+  color: white;
 }
 
-.boton2 {
-  padding: 12px 35px;
+.dropbtn {
+ background-color:rgb(36, 56, 51);
+ color: white;
+ padding: 16px;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+ border-radius: 15px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+ background-color: rgb(36, 56, 51);
+}
+
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f1f1f1;
+ min-width: 160px;
+ overflow: auto;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.dropdown-content a {
+ color: black;
+padding: 12px 16px;
+ text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+.botonHeader {
+  padding: 0.7rem 1.4rem;
   border: 0;
   border-radius: 30px;
-  margin-left: 20px;
-  margin-right: 40px;
+  color: white;
+  font-size: 100%;
+  color: black;
 }
+
 
 .imgces {
   width: 40px;
-  margin-left: -20px;
-  position: absolute;
-  float: right;
+  
 }
 
 @media screen and (max-width: 880px) {
@@ -199,22 +244,22 @@
   transform: scale(.72) translateX(139%);
  }
 
- .collage .photo-wrapper #f1 {background: url(../ABOUTUS/IMAGENES/Bacon-Tomato-Grilled-Cheese-Sandwich-Recipe-Pics-10.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f2 {background: url(../ABOUTUS/IMAGENES/beverage-g0367cead8_640.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f3 {background: url(../ABOUTUS/IMAGENES/bread-g3f68f6f27_640.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f4 {background: url(../ABOUTUS/IMAGENES/brownie-6094006_1280.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f5 {background: url(../ABOUTUS/IMAGENES/cafetortilla.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f6 {background: url(../ABOUTUS/IMAGENES/coffee-g844720e6c_640.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f7 {background: url(../ABOUTUS/IMAGENES/oatmeal-biscuits-g84a7e0f52_640.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f8 {background: url(../ABOUTUS/IMAGENES/pancakes-g4e388a0e4_640.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f9 {background: url(../ABOUTUS/IMAGENES/pancakes-g7e2beafed_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f1 {background: url(../IMAGENES/Bacon-Tomato-Grilled-Cheese-Sandwich-Recipe-Pics-10.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f2 {background: url(../IMAGENES/beverage-g0367cead8_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f3 {background: url(../IMAGENES/bread-g3f68f6f27_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f4 {background: url(../IMAGENES/brownie-6094006_1280.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f5 {background: url(../IMAGENES/cafetortilla.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f6 {background: url(../IMAGENES/coffee-g844720e6c_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f7 {background: url(../IMAGENES/oatmeal-biscuits-g84a7e0f52_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f8 {background: url(../IMAGENES/pancakes-g4e388a0e4_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f9 {background: url(../IMAGENES/pancakes-g7e2beafed_640.jpg) center center no-repeat; background-size: cover;}
 
 
 .diven {
   font-size: 30px;
   line-height: 60px;
   padding-block: 50px;
-  background-image: url(../ABOUTUS/IMAGENES/fondo.jpg);
+  background-image: url(../IMAGENES/fondo.jpg);
 }
 
 .about-section {
