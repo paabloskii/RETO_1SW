@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap');
+
+* {
+  font-family: 'Imbue', sans-serif;
+  margin: 0;
+}
+
+/*-----------HEADER-----------*/
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 150px 400px auto 315px;
+  grid-template-rows: 135px auto;
+  box-shadow: 0px 0px 10px 0px;
+  height: 130px;
+}
+
+.mgtxt {
+  margin-left: 30px;
+}
+
+.mgdiv {
+  margin-top: 45px;
+  font-size: 30px;
+}
+
+.rightp {
+  margin-top: 40px;
+}
+
+.boton1 {
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  color: white;
+  background-color: rgb(36, 56, 51);
+}
+
+.boton2 {
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.imgces {
+  width: 40px;
+  margin-left: -20px;
+  position: absolute;
+  float: right;
+}
+
+@media screen and (max-width: 880px) {
+  .boton1 {
+    display: none;
+  }
+
+  .boton2 {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .imgces {
+    display: none;
+  }
+}
+
+/*------------BODY------------*/
+
+.columns {
+  display: block;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+ }
+
+ .col-12, .col-25, .col-33, .col-37, .col-50, .col-62, .col-66, .col-75, .col-87, .col-100 {
+   text-align: left;
+   display: block;
+   float: left;
+   padding: 10px 20px;
+   box-sizing: border-box;
+ }
+
+ .col-12 img, .col-25 img, .col-33 img, .col-37 img, .col-50 img, .col-62 img, .col-66 img, .col-75 img, .col-87 img, .col-100 img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   margin: 0 auto;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ @media screen and (min-width: 200px) {
+  .columns {display: table;}
+  .col-12, .col-25 {width: 50%;}
+  .col-33, .col-37, .col-50, .col-62, .col-66, .col-75, .col-87, .col-100 {width: 100%;}
+ }
+
+ @media screen and (min-width: 800px) {
+  .col-12, .col-25 {width: 25%;}
+  .col-33 {width: calc(100%/3);}
+  .col-37 {width: 37.5%;}
+  .col-50 {width: 50%;}
+  .col-62 {width: 62.5%;}
+  .col-66 {width: calc(2/3*100%);}
+  .col-75 {width: 75%;}
+  .col-87 {width: 87.5%;}
+  .col-100 {width: 100%;}
+ }
+
+ @media screen and (min-width: 1200px) {.col-12 {width:12.5%;}}
+
+ .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+ }
+
+ body {font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;}
+ .credits {
+  display: inline-block;
+  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-size: .7em;
+  color: #2c3739;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 2px 12px;
+  box-sizing: border-box;
+ }
+
+ #photo-collage .col-33 {
+  padding: 0;
+  margin: 0;
+ }
+
+ .collage .photo-wrapper {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box;
+  transition: all 300ms ease-out;
+  width: 100%;
+  height: 0;
+  padding-bottom: 66%;
+ }
+
+ .collage .photo-wrapper .scale-caption {
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 55, 57, .9);
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  padding: 20% 5%;
+  box-sizing: border-box;
+  transition: all 300ms ease;
+ }
+
+ .collage .photo-wrapper .scale-caption span:nth-child(1) {
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 225%;
+  line-height: 150%;
+  margin-bottom: 20px;
+ }
+
+ .collage .photo-wrapper div {
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+ }
+
+ .collage .photo-wrapper div:hover, .collage .photo-wrapper div:focus, .collage .photo-wrapper div:active {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scale(1.4);
+ }
+
+ .collage .photo-wrapper div:hover .scale-caption, .collage .photo-wrapper div:focus .scale-caption, .collage .photo-wrapper div:active .scale-caption {
+  transform: none;
+  transform: scale(.72) translateX(139%);
+ }
+
+ .collage .photo-wrapper #f1 {background: url(../ABOUTUS/IMAGENES/Bacon-Tomato-Grilled-Cheese-Sandwich-Recipe-Pics-10.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f2 {background: url(../ABOUTUS/IMAGENES/beverage-g0367cead8_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f3 {background: url(../ABOUTUS/IMAGENES/bread-g3f68f6f27_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f4 {background: url(../ABOUTUS/IMAGENES/brownie-6094006_1280.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f5 {background: url(../ABOUTUS/IMAGENES/cafetortilla.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f6 {background: url(../ABOUTUS/IMAGENES/coffee-g844720e6c_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f7 {background: url(../ABOUTUS/IMAGENES/oatmeal-biscuits-g84a7e0f52_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f8 {background: url(../ABOUTUS/IMAGENES/pancakes-g4e388a0e4_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f9 {background: url(../ABOUTUS/IMAGENES/pancakes-g7e2beafed_640.jpg) center center no-repeat; background-size: cover;}
+
+
+.diven {
+  font-size: 30px;
+  line-height: 60px;
+  padding-block: 50px;
+  background-image: url(../ABOUTUS/IMAGENES/fondo.jpg);
+}
+
+.about-section {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-inline: 200px;
+}
+
+.about-section img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item1 {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.menu-item2 {
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 12px;
+  background-color: #243833;
+}
+
+.menu-item2 > iframe {
+  border-radius: 10px;
+}
+
+.tit-maps {
+  font-size: 60px;
+  text-align: center;
+  margin-block: 30px;
+  margin-top: 100px;
+}
+
+.flex-mapa {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-mapa > div {
+  width: 490px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/*-----------PRUEBA-----------*/
+
+
+
+/*-----------FOOTER-----------*/
+
+.fot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  z-index: 999;
+  background-color: #243833;
+  padding: 20px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  color: white;
+  margin-top: 100px;
+}
+
+.col {
+  flex-grow: 2;
+}
+
+.colcentral {
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.txprimero {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.txtpeque {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.col1 {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.txt {
+  font-size: 300%;
+}
+
+.txtcentro {
+  font-size: xx-large;
+}
+
+.txtlegal {
+  font-size: x-large;
+}
+
+.txtlegal1 {
+  font-size: x-large;
+}
+
+.txt1 {
+  font-size: xx-large;
+}
+
+.logosfooter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px
+}
+
+.logoinsta {
+  width: 50px;
+  height: 50px;
+}
+
+.logowhats {
+  width: 50px;
+  height: 50px;
+}
+
+.barra {
+  font-size: 700%;
+}
