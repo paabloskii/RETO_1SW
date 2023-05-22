@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../IMAGENES/logopweb.png">
     <title>SIGN IN</title>
     <script src="SGIN.js"></script>
+    <script src="SGUP.js"></script>
     
 </head>
 
@@ -39,7 +40,7 @@
                     Términos de uso</span><br>
                 <input type="checkbox"><span style="font-size: 22px;"> <span style="color: red;">*</span>Confirmas que
                     has leído la Política de privacidad</span><br>
-                <input type="button" value="SIGN IN" onclick="conexion('cliente/buscarCorreo?correo=' + document.getElementById('email').value)">
+                <input type="button" value="SIGN IN" onclick="conexionlogin('cliente/buscarCorreo?correo=' + document.getElementById('email').value)">
                 <p id="error-message" style="color: red; display: none; margin-top: 5px;"> Invalid credentials. Please try again.</p>
             </form>
         </div>
