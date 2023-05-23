@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="CSS-MENU.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MENU</title>
+    <script src="SGIN.js"></script>
+    <script src="Profile.js"></script>
 </head>
-<body>
-    <div class="grid-container">
-        <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo.png" style="width: 130px; margin-left: 10px;"></a></div>
+
+<body onload="botonesLogin()">
+    <div class="gridcontainer">
+        <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
         <div class="mgdiv">
             <a class="mgtxt" href="MENU.html">Menu</a>
           <a class="mgtxt">Take Away</a>
@@ -17,13 +21,22 @@
         </div>
         <div><a></a></div>
         <div class="rightp">
-            <a href="SGIN.html"><button class="boton1">Sign in</button></a>
-            <a href="SGUP.html"><button class="boton2">Sign up</button></a>
+            <a href="SGIN.html" id="sign_in"><button  class="botonHeader">Sign in</button></a>
+            <a href="SGUP.html"  id="sign_up" ><button class="botonHeader">Sign up</button></a>
+            <div class="dropdown"  style="display: none;">
+                <button onclick="myFunction()" class="dropbtn">Perfil</button>
+                <div id="profile" class="dropdown-content">
+                  <a href="#datos">Datos</a>
+                  <a href="#logout" onclick="logout()">Cerrar Sesion</a>
+                </div>
+              </div>
           <img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png">
         </div>
-        <div class="i1">
-          <img src="../IMAGENES/Menú Desayuno Comida Restaurante Rústico Pizarra.png" style="width: 100%; position: static; margin: 0;">
-          <div class="fot">
+    </div>
+    <div class="i1">
+        <img src="../IMAGENES/Menú Desayuno Comida Restaurante Rústico Pizarra.png"
+            style="width: 100%; position: static; margin: 0;">
+        <div class="fot">
             <div class="col">
                 <span class="txt"><u><b>by<br>Pablo's</b></u></span>
             </div>
@@ -47,8 +60,9 @@
                     <a href=""><img class="logowhats" src="../IMAGENES/whatsapp (1).png"></a>
                 </div>
             </div>
-          </div>
         </div>
     </div>
+    </div>
 </body>
+
 </html>

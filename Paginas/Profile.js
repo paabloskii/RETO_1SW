@@ -17,3 +17,8 @@ function myFunction() {
       }
     }
   }
+
+  function logout(){
+    localStorage.setItem("login","false");
+    location.reload();
+  }

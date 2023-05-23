@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ABUS.css">
     <link rel="shortcut icon" href="../LOGIN/IMAGENES/logopweb.png">
+    <script src="SGIN.js"></script>
+    <script src="Profile.js"></script>
     <title>ABOUT US</title>
 </head>
-<body>
+<body onload="botonesLogin()">
     <div class="gridcontainer">
         <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
         <div class="mgdiv">
@@ -24,7 +26,7 @@
                 <button onclick="myFunction()" class="dropbtn">Perfil</button>
                 <div id="profile" class="dropdown-content">
                   <a href="#datos">Datos</a>
-                  <a href="#logout">Cerrar Sesion</a>
+                  <a href="#logout" onclick="logout()">Cerrar Sesion</a>
                 </div>
               </div>
           <img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png">
