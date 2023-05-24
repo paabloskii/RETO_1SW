@@ -9,60 +9,79 @@
     <title>MENU</title>
     <script src="SGIN.js"></script>
     <script src="Profile.js"></script>
+    <script src="MENU.js"></script>
 </head>
 
 <body onload="botonesLogin()">
     <div class="gridcontainer">
-        <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
+        <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a>
+        </div>
         <div class="mgdiv">
             <a class="mgtxt" href="MENU.html">Menu</a>
-          <a class="mgtxt">Take Away</a>
-          <a href="ABUS.html" class="mgtxt">About Us</a>
+            <a class="mgtxt">Take Away</a>
+            <a href="ABUS.html" class="mgtxt">About Us</a>
         </div>
         <div><a></a></div>
         <div class="rightp">
-            <a href="SGIN.html" id="sign_in"><button  class="botonHeader">Sign in</button></a>
-            <a href="SGUP.html"  id="sign_up" ><button class="botonHeader">Sign up</button></a>
-            <div class="dropdown"  style="display: none;">
+            <a href="SGIN.html" id="sign_in"><button class="botonHeader">Sign in</button></a>
+            <a href="SGUP.html" id="sign_up"><button class="botonHeader">Sign up</button></a>
+            <div class="dropdown" style="display: none;">
                 <button onclick="myFunction()" class="dropbtn">Perfil</button>
                 <div id="profile" class="dropdown-content">
-                  <a href="#datos">Datos</a>
-                  <a href="#logout" onclick="logout()">Cerrar Sesion</a>
+                    <a href="#datos">Datos</a>
+                    <a href="#logout" onclick="logout()">Cerrar Sesion</a>
                 </div>
-              </div>
-          <img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png">
+            </div>
+            <img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png">
         </div>
     </div>
-    <div class="i1">
-        <img src="../IMAGENES/Menú Desayuno Comida Restaurante Rústico Pizarra.png"
-            style="width: 100%; position: static; margin: 0;">
-        <div class="fot">
-            <div class="col">
-                <span class="txt"><u><b>by<br>Pablo's</b></u></span>
+    <div class="body" >
+        <div class="container">
+            <div class="column">
+              <h2>Bebidas</h2>
+              <div id="bebidasContainer"></div>
             </div>
-            <div class="barra">|</div>
-            <div class="colcentral">
-                <div class="txtprimero">
-                    <span class="txtcentro"><u><b>Legal</b></u></span>
-                </div>
-                <div class="txtpeque">
-                    <span class="txtlegal">Private committee area</span>
-                    <span class="txtlegal1">Cookies Policy</span>
-                </div>
+        
+            <div class="column">
+              <h2>Salados</h2>
+              <div id="saladosContainer"></div>
             </div>
-            <div class="barra">|</div>
-            <div class="col1">
-                <div class="txt1col">
-                    <span class="txt1"><u><b>Follow us</b></u></span>
-                </div>
-                <div class="logosfooter">
-                    <a href=""><img class="logoinsta" src="../IMAGENES/instagram.png"></a>
-                    <a href=""><img class="logowhats" src="../IMAGENES/whatsapp (1).png"></a>
-                </div>
+        
+            <div class="column">
+              <h2>Repostería</h2>
+              <div id="reposteriaContainer"></div>
+            </div>
+          </div>
+        
+
+
+    </div>
+    <div class="fot">
+        <div class="col">
+            <span class="txt"><u><b>by<br>Pablo's</b></u></span>
+        </div>
+        <div class="barra">|</div>
+        <div class="colcentral">
+            <div class="txtprimero">
+                <span class="txtcentro"><u><b>Legal</b></u></span>
+            </div>
+            <div class="txtpeque">
+                <span class="txtlegal">Private committee area</span>
+                <span class="txtlegal1">Cookies Policy</span>
             </div>
         </div>
+        <div class="barra">|</div>
+        <div class="col1">
+            <div class="txt1col">
+                <span class="txt1"><u><b>Follow us</b></u></span>
+            </div>
+            <div class="logosfooter">
+                <a href=""><img class="logoinsta" src="../IMAGENES/instagram.png"></a>
+                <a href=""><img class="logowhats" src="../IMAGENES/whatsapp (1).png"></a>
+            </div>
+        </div>
+    </div>
     </div>
     </div>
 </body>
-
 </html>
