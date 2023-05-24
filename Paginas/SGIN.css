@@ -8,7 +8,6 @@
 
 body > div {
   height: 100vh;
-  overflow: hidden;
 }
 
 
@@ -95,11 +94,12 @@ body > div {
 /*------------BODY------------*/
 
 .posi {
-    height: 640px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(../IMAGENES/fondo.jpg);
+    background-size: cover;
 }
 
 label {
