@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap');
+
+* {
+  font-family: 'Imbue', sans-serif;
+  margin: 0;
+}
+
+/*-----------HEADER-----------*/
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 150px 400px auto 315px;
+  grid-template-rows: 135px auto;
+  box-shadow: 0px 0px 10px 0px;
+  height: 130px;
+}
+
+.mgtxt {
+  margin-left: 30px;
+}
+
+.mgdiv {
+  margin-top: 45px;
+  font-size: 30px;
+}
+
+.rightp {
+  margin-top: 40px;
+}
+
+.boton1 {
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  color: white;
+  background-color: rgb(36, 56, 51);
+}
+
+.boton2 {
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.imgces {
+  width: 40px;
+  margin-left: -20px;
+  position: absolute;
+  float: right;
+}
+
+@media screen and (max-width: 880px) {
+
+  .boton1 {
+    display: none;
+  }
+
+  .boton2 {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .imgces {
+    display: none;
+  }
+
+}
+
+/*------------SEPS------------*/
+
+.divi {
+  color: #fff;
+  background-image: url(../REPOGIT/RETO_1SW/IMAGENES/fondo.jpg);
+  height: 94px;
+}
+
+.divi {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.divi > div {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 35px;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+/*------------BODY------------*/
+
+.sepP {
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  color: white;
+  background-image: url(../REPOGIT/RETO_1SW/IMAGENES/fondo.jpg);
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.product-card p {
+  color: #888;
+}
+
+.counter {
+  margin: 20px 0;
+}
+
+.counter button {
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.counter span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.add-to-cart {
+  background-color: rgb(36, 56, 51);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(80, 88, 86);
+}
+
+.counter button:hover {
+  background-color: rgb(80, 88, 86);
+  color: #eee;
+}
+
+/*-----------FOOTER-----------*/
+
+.fot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    z-index: 999;
+    background-color: #243833;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: white;
+    height: 118px;
+}
+
+.col {
+    flex-grow: 2;
+}
+
+.colcentral {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.txprimero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.txtpeque {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.col1 {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.txt {
+    font-size: 300%;
+}
+
+.txtcentro {
+    font-size: xx-large;
+}
+
+.txtlegal {
+    font-size: x-large;
+}
+
+.txtlegal1 {
+    font-size: x-large;
+}
+
+
+.txt1 {
+    font-size: xx-large;
+}
+
+
+.logosfooter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.logoinsta {
+    width: 50px;
+    height: 50px;
+}
+
+.logowhats {
+    width: 50px;
+    height: 50px;
+}
+
+.barra {
+    font-size: 700%;
+}
