@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap');
+
+* {
+  font-family: 'Imbue', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*-----------HEADER-----------*/
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 150px 400px auto 315px;
+  grid-template-rows: 135px auto;
+  height: 130px;
+}
+
+.mgtxt {
+  margin-left: 30px;
+}
+
+.mgdiv {
+  margin-top: 45px;
+  font-size: 30px;
+}
+
+.rightp {
+  margin-top: 40px;
+}
+
+.boton1 {
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  color: white;
+  background-color: rgb(36, 56, 51);
+}
+
+.boton2 {
+  padding: 12px 35px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.imgces {
+  width: 40px;
+  margin-left: -20px;
+  position: absolute;
+  float: right;
+}
+
+@media screen and (max-width: 880px) {
+
+  .boton1 {
+    display: none;
+  }
+
+  .boton2 {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .imgces {
+    display: none;
+  }
+
+}
+
+/*------------BODY------------*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.flex-container-col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid lightgrey;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 73%;
+}
+
+.flex-item-right {
+    background-color: aliceblue;
+    padding: 10px;
+    flex: 27%;
+    border: 1px solid lightgrey;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 10px 15px 10px 0;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.flex-item-col1 {
+    flex: 50%;
+    padding: 15px;
+}
+
+.flex-item-col2 {
+    flex: 50%;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 432px;
+}
+
+.btn:hover {
+    background-color: #243833;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.check {
+    padding-left: 15px;
+    margin-block: -4.5px;
+}
+
+span.price {
+    float: right;
+    color: grey;
+  }
+
+/*-----------FOOTER-----------*/
+
+.fot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    z-index: 999;
+    background-color: #243833;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: white;
+    height: 166px;
+}
+
+.col {
+    flex-grow: 2;
+}
+
+.colcentral {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.txprimero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.txtpeque {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.col1 {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.txt {
+    font-size: 300%;
+}
+
+.txtcentro {
+    font-size: xx-large;
+}
+
+.txtlegal {
+    font-size: x-large;
+}
+
+.txtlegal1 {
+    font-size: x-large;
+}
+
+
+.txt1 {
+    font-size: xx-large;
+}
+
+
+.logosfooter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.logoinsta {
+    width: 50px;
+    height: 50px;
+}
+
+.logowhats {
+    width: 50px;
+    height: 50px;
+}
+
+.barra {
+    font-size: 700%;
+}
