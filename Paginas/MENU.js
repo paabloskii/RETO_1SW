@@ -16,9 +16,7 @@ function fetchProductosMenu() {
       categorias.forEach(categoria => {
         const productosCategoria = data.filter(producto => producto.categoria === categoria);
         if (productosCategoria.length > 0) {
-          const categoriaTitle = document.createElement('h2');
-          categoriaTitle.textContent = categoria;
-
+         
           const productosLista = document.createElement('ul');
           productosCategoria.forEach(producto => {
             const productoItem = document.createElement('li');

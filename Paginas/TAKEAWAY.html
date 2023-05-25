@@ -6,59 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="TAKEAWAY.css">
     <link rel="shortcut icon" href="../IMAGENES/logopweb.png">
+    <script src="SGIN.js"></script>
+    <script src="Profile.js"></script>
+    <script src="TAKEAWAY.js"></script>
     <title>TAKE AWAY</title>
 </head>
-<body>
-    <div class="gridcontainer">
-        <div><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></div>
-        <div class="mgdiv">
-          <a class="mgtxt">Menu</a>
-          <a class="mgtxt">Take Away</a>
-          <a class="mgtxt">About Us</a>
-        </div>
-        <div><a></a></div>
-        <div class="rightp">
-          <button class="boton1">Sign in</button>
-          <button class="boton2">Sign up</button>
-          <img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png">
-        </div>
-    </div>
+<body onload="botonesLogin()">
+  <div class="gridcontainer">
+      <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
+      <div class="mgdiv">
+          <a class="mgtxt" href="MENU.html">Menu</a>
+        <a class="mgtxt">Take Away</a>
+        <a href="ABUS.html" class="mgtxt">About Us</a>
+      </div>
+      <div><a></a></div>
+      <div class="rightp">
+          <a href="SGIN.html" id="sign_in"><button  class="botonHeader">Sign in</button></a>
+          <a href="SGUP.html"  id="sign_up" ><button class="botonHeader">Sign up</button></a>
+          <div class="dropdown"  style="display: none;">
+              <button onclick="myFunction()" class="dropbtn">Perfil</button>
+              <div id="profile" class="dropdown-content">
+                <a href="#datos">Datos</a>
+                <a href="#logout" onclick="logout()">Cerrar Sesion</a>
+              </div>
+            </div>
+        <img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png">
+      </div>
+  </div>
     <div class="divi">
         <div>
             TAKE AWAY
         </div>
     </div>
-    <div class="product-card">
-        <img src="../IMAGENES/beverage-g0367cead8_640.jpg" alt="Imagen del producto">
-        <h3>Nombre del Producto</h3>
-        <p>A bacon and cheese sandwich is a delicious combination of ingredients that come
-            together to create a tasty and satisfying bite. This sandwich is typically made
-            with toasted bread slices, filled with crispy bacon and melted cheese.</p>
-        <p>______</p>
-        <p>PRECIO</p>
-        <div class="counter">
-          <button class="decrement">-</button>
-          <span class="count">0</span>
-          <button class="increment">+</button>
+    <div class="container">
+      <div class="flex">
+        <h2>Bebidas</h2>
+        <div id="bebidasContainer">
+          
         </div>
-        <button class="add-to-cart">Añadir al carrito</button>
       </div>
-      <script>
-        const decrementButton = document.querySelector('.decrement');
-        const incrementButton = document.querySelector('.increment');
-        const countSpan = document.querySelector('.count');
-        let count = 0;
-        decrementButton.addEventListener('click', () => {
-          if (count > 0) {
-            count--;
-            countSpan.textContent = count;
-          }
-        });
-        incrementButton.addEventListener('click', () => {
-          count++;
-          countSpan.textContent = count;
-        });
-      </script>
+  
+      <div class="flex1">
+        <h2>Salados</h2>
+        <div id="saladosContainer"></div>
+      </div>
+  
+      <div class="flex2">
+        <h2>Repostería</h2>
+        <div id="reposteriaContainer"></div>
+      </div>
+      
+        
+          
+      </div>
+    </div>
     <div class="fot">
         <div class="col">
             <span class="txt"><u><b>by<br>Pablo's</b></u></span>
