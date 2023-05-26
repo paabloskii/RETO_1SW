@@ -14,7 +14,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
     await conexionLogin("cliente/buscarCorreo?correo=" + email);
 });
 
-function botonesLogin(){
+function botonesLogin() {
     if (localStorage.getItem("login") == "true") {
         document.getElementById('sign_in').style.display = 'none';
         document.getElementById('sign_up').style.display = 'none';
@@ -28,19 +28,28 @@ async function conexion(ruta) {
     const resul = await fetch(url, { method: 'GET' });
     const jsonData = await resul.json();
     console.log(jsonData);
+    console.log(url);
     return jsonData;
 }
-async function conexionDelete(ruta) {
+async function conexioncarrito(ruta) {
     const url = "http://localhost:4000/API/" + ruta;
-    const resul = await fetch(url, { method: 'DELETE',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-        "id_producto": id
-    })});
+    const resul = await fetch(url, { method: 'GET' });
+    const jsonData = await resul.json();
+    console.log(jsonData);
+    return jsonData;
 }
-async function conexionlogin(ruta){
+async function conexionDelete(ruta, id) {
+    const url = "http://localhost:4000/API/" + ruta;
+    console.log(id)
+    const resul = await fetch(url, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({"id_producto": id})
+    });
+}
+async function conexionlogin(ruta) {
     const url = "http://localhost:4000/API/" + ruta;
     const resul = await fetch(url, { method: 'GET' });
     const jsonData = await resul.json();
@@ -51,9 +60,11 @@ async function conexionlogin(ruta){
         document.getElementById('password').value = '';
     } else {
         location.replace("http://127.0.0.1:5500/FRONT/RETO_1SW/Paginas/MAINPAGE.html");
-        
-        localStorage.setItem("login","true");
+
+        localStorage.setItem("login", "true");
+        localStorage.setItem("usuario",jsonData[0]["id_cliente"]);
     }
+    
 
     console.log(jsonData);
     return jsonData;
