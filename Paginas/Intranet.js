@@ -108,7 +108,7 @@
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    id_producto: id
+                    "id_producto": id
                 })
             })
                 .then(response => response.json())

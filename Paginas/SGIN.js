@@ -30,7 +30,16 @@ async function conexion(ruta) {
     console.log(jsonData);
     return jsonData;
 }
-
+async function conexionDelete(ruta) {
+    const url = "http://localhost:4000/API/" + ruta;
+    const resul = await fetch(url, { method: 'DELETE',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        "id_producto": id
+    })});
+}
 async function conexionlogin(ruta){
     const url = "http://localhost:4000/API/" + ruta;
     const resul = await fetch(url, { method: 'GET' });

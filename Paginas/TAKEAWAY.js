@@ -12,8 +12,8 @@ async function fetchProductosAway() {
             <img src="${productos[index]["photo"]}" class ="fotoprod">
             <h3>${productos[index]["nombre_prod"]}</h3>
             <p>${productos[index]["descripcion"]}</p>
-            <p>Precio: ${productos[0]["precio"]}</p>
-            <button type="Submit" class="addbutton">ADD</button>
+            <p>Precio: ${productos[index]["precio"]}</p>
+            <button type="Submit" class="addbutton" onclick="agregarCarrito(${productos[index]["id_producto"]})">ADD</button>
             </div>
             `
             contbebidas++;
@@ -28,8 +28,8 @@ async function fetchProductosAway() {
             <img src="${productos[index]["photo"]}" class ="fotoprod">
             <h3>${productos[index]["nombre_prod"]}</h3>
             <p>${productos[index]["descripcion"]}</p>
-            <p>Precio: ${productos[0]["precio"]}</p>
-            <button type="Submit" class="addbutton">ADD</button>
+            <p>Precio: ${productos[index]["precio"]}</p>
+            <button type="Submit" class="addbutton" onclick="agregarCarrito(${productos[index]["id_producto"]})">ADD</button>
             </div>
             `
             contsalados++;
@@ -43,66 +43,32 @@ async function fetchProductosAway() {
             <img src="${productos[index]["photo"]}" class ="fotoprod">
             <h3>${productos[index]["nombre_prod"]}</h3>
             <p>${productos[index]["descripcion"]}</p>
-            <p>Precio: ${productos[0]["precio"]}</p>
-            <button type="Submit" class="addbutton">ADD</button>
+            <p>Precio: ${productos[index]["precio"]}</p>
+            <button type="Submit" class="addbutton" onclick="agregarCarrito(${productos[index]["id_producto"]})">ADD</button>
             </div>
             `
             contreposteria++;
         }
         
     }   
-
-
-    // fetch('http://localhost:4000/API/producto/consultar')
-    //     .then(respone => Response.json())
-    //     .then(data => {
-    //         const bebidasContainer = document.getElementById('bebidas');
-    //         const saladosContainer = document.getElementById('salados');
-    //         const reposteriaContainer = document.getElementById('reposteria');
-
-    //         bebidasContainer.innerHTML = '';
-    //         saladosContainer.innerHTML = '';
-    //         reposteriaContainer.innerHTML = '';
-
-        
-    //         categorias.forEach(categoria =>{
-    //             const productosCategoria = data.filter(producto => producto.categoria === categoria);
-    //             if (productosCategoria.length > 0) {
-
-    //                 const productosFila = document.createElement('flex_container');
-    //                 productosCategoria.forEach(producto => {
-    //                     const productoItem = document.createElement('flex_item');
-    //                     containerBebidas.innerhtml += `
-    //                   <div class="producto">
-    //                     <img src="${producto.photo}" class ="fotoprod">
-    //                  <h3>${producto.nombre_prod}</h3>
-    //                  <p>${producto.descripcion}</p>
-    //                  <p>Precio: ${producto.precio}</p>
-    //                  <button type="Submit" class="addbutton">ADD</button>
-    //                 </div>
-    //                 `;
-    //                 productosFila.appendChild(productoItem);
-
-    //                 });
-    //                 if (categoria === 'Bebida') {
-
-    //                     bebidasContainer.appendChild(productosFila);
-    //                   } else if (categoria === 'Salado') {
-            
-    //                     saladosContainer.appendChild(productosFila);
-    //                   } else if (categoria === 'Repostería') {
-            
-    //                     reposteriaContainer.appendChild(productosFila);
-    //                   }
-    //                 }
-    //               });
-    //             })
-    //             .catch(error => {
-    //               console.error('Error:', error);
-    //             });
-    //         }
+   
 }
-            
+function addtocart(productId) {
+    var carrito = localStorage.setItem('id',JSON.stringify(productos));
+    cartItems.push(productId);
+
+}
+function agregarCarrito(id_prod){
+    if (localStorage.getItem('carrito')!= null) {
+        var cont = localStorage.getItem('carrito')
+        cont += ','+ id_prod;
+        localStorage.setItem('carrito',cont) 
+    }else{
+        localStorage.setItem('carrito',id_prod)
+    }
+    
+}
+
             document.addEventListener('DOMContentLoaded', () =>{
                 fetchProductosAway();
             });

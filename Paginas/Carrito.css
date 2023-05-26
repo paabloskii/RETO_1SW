@@ -118,7 +118,27 @@ display: block;
   }
 
 }
- 
+.flex{
+    text-align: center;
+}
+.flex h2{
+    font-size: 300%;
+}
+#productosContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    align-items:center;
+    justify-content: center;
+    
+  }
+  .producto{
+    display: flex;
+    gap: 20px;
+
+  }
+
   .fot{
     display: flex;
     flex-direction: row;
