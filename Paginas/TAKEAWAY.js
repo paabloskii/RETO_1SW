@@ -53,6 +53,7 @@ async function fetchProductosAway() {
     }   
    
 }
+
 function addtocart(productId) {
     var carrito = localStorage.setItem('id',JSON.stringify(productos));
     cartItems.push(productId);
@@ -62,9 +63,11 @@ function agregarCarrito(id_prod){
     if (localStorage.getItem('carrito')!= null) {
         var cont = localStorage.getItem('carrito')
         cont += ','+ id_prod;
-        localStorage.setItem('carrito',cont) 
+        localStorage.setItem('carrito',cont)
+        alert("Product Added") 
     }else{
         localStorage.setItem('carrito',id_prod)
+        alert("Product Added")
     }
     
 }

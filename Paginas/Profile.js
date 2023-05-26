@@ -20,5 +20,7 @@ function myFunction() {
 
   function logout(){
     localStorage.setItem("login","false");
+    localStorage.removeItem("usuario");
+    localStorage.removeItem("carrito");
     location.reload();
   }

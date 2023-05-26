@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TAKEAWAY.css">
-    <link rel="shortcut icon" href="../IMAGENES/logopweb.png">
-    <script src="SGIN.js"></script>
-    <script src="Profile.js"></script>
-    
-    <title>TAKE AWAY</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="TAKEAWAY.css">
+  <link rel="shortcut icon" href="../IMAGENES/logopweb.png">
+  <script src="SGIN.js"></script>
+  <script src="Profile.js"></script>
+  <script src="Carrito.js"></script>
+
+  <title>TAKE AWAY</title>
 </head>
+
 <body onload="botonesLogin()">
   <div class="gridcontainer">
-      <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
-      <div class="mgdiv">
-          <a class="mgtxt" href="MENU.html">Menu</a>
-          <a href="TAKEAWAY.html" class="mgtxt">Take Away</a>
-        <a href="ABUS.html" class="mgtxt">About Us</a>
-      </div>
-      <div><a></a></div>
-      <div class="rightp">
-          <a href="SGIN.html" id="sign_in"><button  class="botonHeader">Sign in</button></a>
-          <a href="SGUP.html"  id="sign_up" ><button class="botonHeader">Sign up</button></a>
-          <div class="dropdown"  style="display: none;">
-              <button onclick="myFunction()" class="dropbtn">Perfil</button>
-              <div id="profile" class="dropdown-content">
-                <a href="#datos">Datos</a>
-                <a href="#logout" onclick="logout()">Cerrar Sesion</a>
-              </div>
+    <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
+    <div class="mgdiv">
+        <a class="mgtxt" href="MENU.html">Menu</a>
+      <a href="TAKEAWAY.html" class="mgtxt">Take Away</a>
+      <a href="ABUS.html" class="mgtxt">About Us</a>
+    </div>
+    <div><a></a></div>
+    <div class="rightp">
+        <a href="SGIN.html" id="sign_in"><button  class="botonHeader">Sign in</button></a>
+        <a href="SGUP.html"  id="sign_up" ><button class="botonHeader">Sign up</button></a>
+        <div class="dropdown"  style="display: none;">
+            <button onclick="myFunction()" class="dropbtn">Perfil</button>
+            <div id="profile" class="dropdown-content">
+              <a href="#datos">Datos</a>
+              <a href="#logout" onclick="logout()">Cerrar Sesion</a>
             </div>
-        <img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png">
-      </div>
+          </div>
+      <a href="Carrito.html"><img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png"></a>
+    </div>
+</div>
+  <div class="divi">
+    <div>
+      TAKE AWAY
+    </div>
   </div>
-    <div class="divi">
-        <div>
-            TAKE AWAY
-        </div>
-    </div>
-    <div class="container">
-      <div class="flex">
-        <h2>Bebidas</h2>
-        <div id="bebidasContainer">
-          
-        </div>
-      </div>
-  
-      <div class="flex1">
-        <h2>Salados</h2>
-        <div id="saladosContainer"></div>
-      </div>
-  
-      <div class="flex2">
-        <h2>Repostería</h2>
-        <div id="reposteriaContainer"></div>
-      </div>
-      
-        
-          
-      </div>
-    </div>
-    <div class="fot">
-        <div class="col">
-            <span class="txt"><u><b>by<br>Pablo's</b></u></span>
-        </div>
-        <div class="barra">|</div>
-        <div class="colcentral">
-            <div class="txtprimero">
-                <span class="txtcentro"><u><b>Legal</b></u></span>
-            </div>
+  <div class="container">
+    <div class="flex">
+      <h2>Bebidas</h2>
+      <div id="bebidasContainer">
 
-            <div class="txtpeque">
-                <span class="txtlegal">Private committee area</span>
-                <span class="txtlegal1">Cookies Policy</span>
-            </div>
-        </div>
-        <div class="barra">|</div>
-        <div class="col1">
-            <div class="txt1col">
-                <span class="txt1"><u><b>Follow us</b></u></span>
-            </div>
-            <div class="logosfooter">
-
-                <a><img class="logoinsta" src="../IMAGENES/instagram.png"></a>
-                <a><img class="logowhats" src="../IMAGENES/whatsapp (1).png"></a>
-            </div>
-        </div>
+      </div>
     </div>
-    <script src="TAKEAWAY.js"></script>
+
+    <div class="flex1">
+      <h2>Salados</h2>
+      <div id="saladosContainer"></div>
+    </div>
+
+    <div class="flex2">
+      <h2>Repostería</h2>
+      <div id="reposteriaContainer"></div>
+    </div>
+    <button class="purchase" type="submit" onclick="crearPedido()">ADD TO CART</button>
+  </div>
+
+  </div>
+  <div class="fot">
+    <div class="col">
+      <span class="txt"><u><b>by<br>Pablo's</b></u></span>
+    </div>
+    <div class="barra">|</div>
+    <div class="colcentral">
+      <div class="txtprimero">
+        <span class="txtcentro"><u><b>Legal</b></u></span>
+      </div>
+
+      <div class="txtpeque">
+        <span class="txtlegal">Private committee area</span>
+        <span class="txtlegal1">Cookies Policy</span>
+      </div>
+    </div>
+    <div class="barra">|</div>
+    <div class="col1">
+      <div class="txt1col">
+        <span class="txt1"><u><b>Follow us</b></u></span>
+      </div>
+      <div class="logosfooter">
+
+        <a><img class="logoinsta" src="../IMAGENES/instagram.png"></a>
+        <a><img class="logowhats" src="../IMAGENES/whatsapp (1).png"></a>
+      </div>
+    </div>
+  </div>
+  <script src="TAKEAWAY.js"></script>
 </body>
+
 </html>
