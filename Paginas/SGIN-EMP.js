@@ -11,17 +11,8 @@ document.getElementById('login-form').addEventListener('submit', async function 
 
 
 
-    await conexionLogin("cliente/buscarCorreo?correo=" + email);
+    await conexionLogin("empleado/buscarCorreo?correo=" + email);
 });
-
-function botonesLogin(){
-    if (localStorage.getItem("login") == "true") {
-        document.getElementById('sign_in').style.display = 'none';
-        document.getElementById('sign_up').style.display = 'none';
-        document.querySelector('.dropdown').style.display = 'block';
-    }
-}
-
 
 async function conexion(ruta) {
     const url = "http://localhost:4000/API/" + ruta;
@@ -50,7 +41,7 @@ async function conexionlogin(ruta){
         document.getElementById('email').value = '';
         document.getElementById('password').value = '';
     } else {
-        location.replace("http://127.0.0.1:5500/FRONT/RETO_1SW/Paginas/MAINPAGE.html");
+        location.replace("http://127.0.0.1:5500/FRONT/RETO_1SW/Paginas/Intranet.html");
         
         localStorage.setItem("login","true");
     }

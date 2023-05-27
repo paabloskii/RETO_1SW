@@ -10,13 +10,14 @@
     <title>SIGN IN</title>
     <script src="SGIN.js"></script>
     <script src="SGUP.js"></script>
-    
+
 </head>
 
 <body>
     <div>
         <div class="gridcontainer">
-            <div><a href ="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
+            <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a>
+            </div>
             <div class="mgdiv">
                 <a class="mgtxt" href="MENU.html">Menu</a>
                 <a href="TAKEAWAY.html" class="mgtxt">Take Away</a>
@@ -24,9 +25,9 @@
             </div>
             <div><a></a></div>
             <div class="rightp">
-                <a href="SGIN-EMP.html" id="sign_inemp"><button  class="boton3">Zona empleado</button></a>
-                <a href="SGIN.html" id="sign_in"><button  class="boton1">Sign in</button></a>
-                <a href="SGUP.html"  id="sign_up" ><button class="boton2">Sign up</button></a>
+                <a href="SGIN-EMP.html" id="sign_inemp"><button class="botonHeader">Zona empleado</button></a>
+                <a href="SGIN.html" id="sign_in"><button class="botonHeader">Sign in</button></a>
+                <a href="SGUP.html" id="sign_up"><button class="botonHeader">Sign up</button></a>
                 <a href="Carrito.html"><img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png"></a>
             </div>
         </div>
@@ -41,8 +42,10 @@
                     Términos de uso</span><br>
                 <input type="checkbox"><span style="font-size: 22px;"> <span style="color: red;">*</span>Confirmas que
                     has leído la Política de privacidad</span><br>
-                <input type="button" value="SIGN IN" onclick="conexionlogin('cliente/buscarCorreo?correo=' + document.getElementById('email').value)">
-                <p id="error-message" style="color: red; display: none; margin-top: 5px;"> Invalid credentials. Please try again.</p>
+                <input type="button" value="SIGN IN"
+                    onclick="conexionlogin('cliente/buscarCorreo?correo=' + document.getElementById('email').value)">
+                <p id="error-message" style="color: red; display: none; margin-top: 5px;"> Invalid credentials. Please
+                    try again.</p>
             </form>
         </div>
         <div class="fot">
