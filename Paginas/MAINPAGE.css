@@ -4,10 +4,9 @@
   font-family: 'Imbue', sans-serif;
   margin: 0;
   padding: 0;
-  /*outline: 1px solid red;*/
 }
 
-.gridcontainer {
+.grid {
   display: grid;
   grid-template-columns: 150px 400px auto 600px;
   grid-template-rows: 135px auto;
@@ -36,7 +35,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-left: 200px;
+  justify-content: center;
   }
   
   .rightp a:first-child>button{
@@ -120,6 +119,124 @@
 
 }
 
+@media screen  and (max-width: 1035px){
+  
+  .mgdiv {
+    display: none;
+  }
+
+  .rightp {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 150px auto 100px;
+  }
+
+
+
+}
+
+.dropbtn-r {
+  background-color: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-r {
+  float: right;
+  position: relative;
+  display: none;
+}
+
+@media screen and (max-width: 1035px) {
+
+.dropdown-r {
+	display: inline-block;
+}
+
+}
+
+.dropdown-content-r {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  background-color: #f1f1f1;
+  min-width: 170px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content-r a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-r a:hover {background-color: #ddd;}
+
+.show-r {display: block;}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item-1 {
+  padding: 0px;
+  flex: 100%;
+  height: 400px;
+}
+
+.flex-item-2 {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-3 {
+  padding: 10px;
+  flex: 50%;
+  text-align: center;
+}
+
+.flex-item-4 {
+  margin-top: 30px;
+  padding: 10px;
+  flex: 33.3%;
+  text-align: center;
+}
+
+.flex-item-5 {
+  margin-top: 30px;
+  padding: 10px;
+  flex: 33.3%;
+  text-align: center;
+}
+
+.flex-item-6 {
+  margin-top: 30px;
+  padding: 10px;
+  flex: 33.3%;
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item-1 {
+    flex: none;
+  }
+}
+
+
 .slider {
   margin: 0 auto;
   width: 100%;
@@ -152,18 +269,21 @@
   background-image: url(../IMAGENES/fondo-sld-menu.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .slide:nth-of-type(2) {
   background-image: url(../IMAGENES/Weekly\ offer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .slide:nth-of-type(3) {
   background-image: url(../IMAGENES/fondo-sld-tke.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .slide_buttons {
@@ -238,48 +358,13 @@ a.slide_btn {
   }
 }
 
-  .grid-container {
-    display: grid;
-    gap: 100px;
+@media screen and (max-width: 667px) {
+
+  .fot {
+    width: 627px;
   }
 
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-
-    font-size: 30px;
-    width: 100%;
-  }
-
-  .item1 {
-    grid-column: 1 / span 6;
-    grid-row: 1;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    height: 350px;
-  }
-
-  .texto-centrado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 300%;
-    color: rgb(36, 56, 51);
-  }
-
-  .offer {
-    width: 100%;
-    height: 100%;
-
-  }
-
-  .item2 {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-
-  }
+}
 
   .cuadro {
     display: flex;
@@ -288,8 +373,6 @@ a.slide_btn {
     width: 100%;
     gap: 40px;
   }
-
-
 
   .boton {
     padding: 15px 50px;
@@ -301,32 +384,11 @@ a.slide_btn {
 
   }
 
-
-  .item3 {
-    grid-column: 4 / span 3;
-    grid-row: 2;
-  }
-
   .marco-circular {
     width: 70%;
     height: 100%;
-    margin-top: -40px;
   }
-
-  .item4 {
-    grid-column: 1 / span 2;
-    grid-row: 3;
-  }
-
-  .item5 {
-    grid-column: 3 / span 2;
-    grid-row: 3;
-  }
-
-  .item6 {
-    grid-column: 5 / span 2;
-    grid-row: 3;
-  }
+  
   .fot{
     display: flex;
     flex-direction: row;
@@ -337,7 +399,6 @@ a.slide_btn {
     background-color: #243833;
     padding: 20px;
     text-align: center;
-
     left: 0;
     right: 0;
     color: white;

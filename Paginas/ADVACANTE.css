@@ -7,51 +7,98 @@
 
 /*-----------HEADER-----------*/
 
-.gridcontainer {
+.grid {
   display: grid;
-  grid-template-columns: 150px 400px auto 315px;
+  grid-template-columns: 150px 400px auto 600px;
   grid-template-rows: 135px auto;
-  box-shadow: 0px 0px 10px 0px;
-  height: 130px;
+  align-items: center;
 }
 
 .mgtxt {
   margin-left: 30px;
+  text-decoration: none;
+  color: black;
 }
-
+.mgtxt:hover {
+  color: black;
+  text-decoration: none;
+  
+}
+.mgtxt:active {
+  color: black;
+  text-decoration: none;
+}
 .mgdiv {
-  margin-top: 45px;
   font-size: 30px;
 }
 
 .rightp {
-  margin-top: 40px;
-}
-
-.boton1 {
-  padding: 12px 35px;
-  border: 0;
-  border-radius: 30px;
-  margin-left: 20px;
-  color: white;
-  background-color: rgb(36, 56, 51);
-}
-
-.boton2 {
-  padding: 12px 35px;
-  border: 0;
-  border-radius: 30px;
-  margin-left: 20px;
-  margin-right: 40px;
-}
-
-.imgces {
-  width: 40px;
-  margin-left: -20px;
-  position: absolute;
-  float: right;
-}
-
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  }
+  
+  .rightp a:first-child>button{
+    background-color:#243833;
+    color: white;
+  }
+  
+  .dropbtn {
+   background-color:rgb(36, 56, 51);
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   border-radius: 15px;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+   background-color: rgb(36, 56, 51);
+  }
+  
+  .dropdown {
+   position: relative;
+   display: inline-block;
+  }
+  
+  .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   overflow: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  }
+  
+  .dropdown-content a {
+   color: black;
+  padding: 12px 16px;
+   text-decoration: none;
+  display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  
+  .botonHeader {
+    padding: 0.7rem 1.4rem;
+    border: 0;
+    border-radius: 30px;
+    background-color: #243833;
+    font-size: 100%;
+    color: white;
+  }
+  
+  
+  .imgces {
+    width: 40px;
+    
+  }
 @media screen and (max-width: 880px) {
 
   .boton1 {
@@ -73,6 +120,70 @@
 
 }
 
+@media screen  and (max-width: 1035px){
+  
+  .mgdiv {
+    display: none;
+  }
+
+  .rightp {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 150px auto 100px;
+  }
+
+
+
+}
+
+.dropbtn-r {
+  background-color: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-r {
+  float: right;
+  position: relative;
+  display: none;
+}
+
+@media screen and (max-width: 1035px) {
+
+.dropdown-r {
+	display: inline-block;
+}
+
+}
+
+.dropdown-content-r {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  background-color: #f1f1f1;
+  min-width: 170px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content-r a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-r a:hover {background-color: #ddd;}
+
+.show-r {display: block;}
+
 /*------------BODY------------*/
 
 .body {
@@ -85,13 +196,32 @@ header {
     padding: 20px;
     text-align: center;
     background-image: url(../IMAGENES/hojasFOL.png);
+    background-position: center;
   }
 
-.job-description {
-    margin: 6.5px;
+.flex-job{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    font-size: 25px;
+}
+  
+.flex-item-left {
+    padding: 40px;
+    margin-left: 50px;
+    flex: 50%;
+}
+  
+.flex-item-right {
+    padding: 10px;
+    margin-left: 50px;
+    flex: 50%;
+}
+
+@media (max-width: 1035px) {
+  .flex-job {
+    flex-direction: column;
   }
+}
 
 h2 {
     color: #333;
