@@ -186,6 +186,11 @@ input[type="checkbox"] {
   margin-inline: 5px;
   margin-block: 10px;
 }
+input[type="button"] {
+  background-color: #243833;
+  color: white;
+  border-radius: 8px;
+}
 
 @media screen and (min-width: 1919px){
   .posi {

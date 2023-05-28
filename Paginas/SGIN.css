@@ -188,6 +188,13 @@ input[type="checkbox"] {
   margin-block: 10px;
 }
 
+.signin{
+  padding: 5px 20px;
+  background-color: #243833;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+}
 @media screen and (min-width: 1919px){
   .posi {
     padding-block: 114px;

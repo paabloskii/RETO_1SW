@@ -10,9 +10,9 @@ async function fetchProductosAway() {
             containerBebidas.innerHTML += `
             <div class="producto">
             <img src="${productos[index]["photo"]}" class ="fotoprod">
-            <h3>${productos[index]["nombre_prod"]}</h3>
-            <p>${productos[index]["descripcion"]}</p>
-            <p>Precio: ${productos[index]["precio"]}</p>
+            <h3 class="nombre_prod">${productos[index]["nombre_prod"]}</h3>
+            <p class="desc">${productos[index]["descripcion"]}</p>
+            <p class="precio">Precio: ${productos[index]["precio"]}</p>
             <button type="Submit" class="addbutton" onclick="agregarCarrito(${productos[index]["id_producto"]})">ADD</button>
             </div>
             `
@@ -26,9 +26,9 @@ async function fetchProductosAway() {
             containerSalados.innerHTML += `
             <div class="producto">
             <img src="${productos[index]["photo"]}" class ="fotoprod">
-            <h3>${productos[index]["nombre_prod"]}</h3>
-            <p>${productos[index]["descripcion"]}</p>
-            <p>Precio: ${productos[index]["precio"]}</p>
+            <h3 class="nombre_prod">${productos[index]["nombre_prod"]}</h3>
+            <p class="desc">${productos[index]["descripcion"]}</p>
+            <p class="precio">Precio: ${productos[index]["precio"]}</p>
             <button type="Submit" class="addbutton" onclick="agregarCarrito(${productos[index]["id_producto"]})">ADD</button>
             </div>
             `
@@ -41,9 +41,9 @@ async function fetchProductosAway() {
             containerReposteria.innerHTML += `
             <div class="producto">
             <img src="${productos[index]["photo"]}" class ="fotoprod">
-            <h3>${productos[index]["nombre_prod"]}</h3>
-            <p>${productos[index]["descripcion"]}</p>
-            <p>Precio: ${productos[index]["precio"]}</p>
+            <h3 class="nombre_prod">${productos[index]["nombre_prod"]}</h3>
+            <p class="desc">${productos[index]["descripcion"]}</p>
+            <p class="precio">Precio: ${productos[index]["precio"]}</p>
             <button type="Submit" class="addbutton" onclick="agregarCarrito(${productos[index]["id_producto"]})">ADD</button>
             </div>
             `
