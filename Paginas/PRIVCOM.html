@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CHECKOUT.css">
+    <title>Private Committee</title>
     <link rel="shortcut icon" href="../IMAGENES/logopweb.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>CHECKOUT</title>
+    <link rel="stylesheet" href="PRIVCOM.css">
 </head>
-<body>
+<body onload="botonesLogin()">
     <div class="grid">
         <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
         <div class="mgdiv">
@@ -51,78 +50,34 @@
           </div>
         </div>
     </div>
-    <div class="flex-container">
-        <div class="flex-item-left">
-            <div class="flex-container-col1">
-                <div class="flex-item-col1">
-                    <div class="flex-container">
-                        <div class="flex-item-col2">
-                            <h3>Billing Address</h3>
-                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                            <input type="text" id="email" name="email" placeholder="john@example.com">
-                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                            <label for="city"><i class="fa fa-institution"></i> City</label>
-                            <input type="text" id="city" name="city" placeholder="New York">
-                            <div class="flex-container">
-                                <div class="flex-item-col2">
-                                    <label for="state">State</label>
-                                    <input type="text" id="state" name="state" placeholder="NY">
-                                </div>
-                                <div class="flex-item-col2">
-                                    <label for="zip">Zip</label>
-                                    <input type="text" id="zip" name="zip" placeholder="10001">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex-item-col2">
-                            <h3>Payment</h3>
-                            <label for="fname">Accepted Cards</label>
-                            <div class="icon-container">
-                            <i class="fa fa-cc-visa" style="color:navy;"></i>
-                            <i class="fa fa-cc-amex" style="color:blue;"></i>
-                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                            <i class="fa fa-cc-discover" style="color:orange;"></i>
-                            </div>
-                            <label for="cname">Name on Card</label>
-                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                            <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                            <label for="expmonth">Exp Month</label>
-                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-                            <div class="flex-container">
-                                <div class="flex-item-col2">
-                                    <label for="expyear">Exp Year</label>
-                                    <input type="text" id="expyear" name="expyear" placeholder="XXXX">
-                                </div>
-                                <div class="flex-item-col2">
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="XXX">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="check">
-                    <label><input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing</label>
-                </div>
-                <div>
-                    <input type="submit" value="Continue to checkout" class="btn">
+    <div class="flex-priv">
+        <div class="flex-priv-left">
+            <div class="card-pr">
+                <img src="../IMAGENES/pserrano.jpg" alt="Avatar" style="width:100%; border-top-left-radius: 20px; border-top-right-radius: 20px">
+                <div class="container-pr">
+                  <h4><b>Pablo Serrano</b></h4>
                 </div>
             </div>
+            <p>Pablo es un empresario apasionado de las cafeterías. Su dedicación y conocimiento del 
+            café lo han convertido en un exitoso emprendedor. Con su visión clara, estableció una cadena 
+            reconocida a nivel local y nacional. Pablo se enfoca en ofrecer una experiencia excepcional, 
+            desde la selección de granos de calidad hasta un ambiente acogedor. Motivador y comprometido 
+            con la sostenibilidad, busca siempre la excelencia en su negocio.</p>
         </div>
-        <div class="flex-item-right">
-            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-            <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-            <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-            <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-            <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-            <hr>
-            <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+        <div class="flex-priv-right">
+            <div class="card-pr">
+                <img src="../IMAGENES/pfranco.jpeg" alt="Avatar" style="width:100%; border-top-left-radius: 20px; border-top-right-radius: 20px">
+                <div class="container-pr">
+                  <h4><b>Pablo Franco</b></h4>
+                </div>
+            </div>
+            <p>Pablo, el mano derecha de Pablo en el negocio de las cafeterías, es un líder talentoso 
+            y comprometido. Se encarga de la gestión operativa y financiera, trabajando en estrecha 
+            colaboración con Pablo para impulsar el éxito del negocio. Con experiencia en administración
+            y pasión por el café, garantiza eficiencia y excelencia en todas las operaciones. Su visión 
+            estratégica y habilidad para establecer relaciones sólidas son clave para el crecimiento 
+            y rentabilidad de las cafeterías.</p>
         </div>
-      </div>
     </div>
     <div class="fot">
         <div class="col">
@@ -146,8 +101,8 @@
             </div>
             <div class="logosfooter">
 
-                <a><img class="logoinsta" src="../LOGIN/IMAGENES/instagram.png"></a>
-                <a><img class="logowhats" src="../LOGIN/IMAGENES/whatsapp (1).png"></a>
+                <a><img class="logoinsta" src="../IMAGENES/instagram.png"></a>
+                <a><img class="logowhats" src="../IMAGENES/whatsapp (1).png"></a>
             </div>
         </div>
     </div>

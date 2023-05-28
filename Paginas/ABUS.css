@@ -387,6 +387,21 @@
   font-size: 30px;
 }
 
+.boton {
+  padding: 15px 50px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(36, 56, 51);
+  font-size: xx-large;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
 /*-----------FOOTER-----------*/
 
 .fot{
