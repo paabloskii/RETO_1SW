@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="SGIN-EMP.css">
     <link rel="shortcut icon" href="../IMAGENES/logopweb.png">
     <title>SIGN IN</title>
-    <script src="SGIN.js"></script>
+   
     <script src="SGUP.js"></script>
+    <script src="SGIN-EMP.js"></script>
     
 </head>
 
@@ -36,7 +37,7 @@
                 <input type="text" id="email" name="email" placeholder="Enter your email">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password">
-                <input type="button" value="SIGN IN" onclick="conexionlogin('cliente/buscarCorreo?correo=' + document.getElementById('email').value)">
+                <input type="button" value="SIGN IN" onclick="conexionLogin('empleado/buscarCorreo?correo=' + document.getElementById('email').value)">
                 <p id="error-message" style="color: red; display: none; margin-top: 5px;"> Invalid credentials. Please try again.</p>
             </form>
         </div>
