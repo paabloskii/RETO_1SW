@@ -12,7 +12,7 @@ body > div {
 
 /*-----------HEADER-----------*/
 
-.gridcontainer {
+.grid {
   display: grid;
   grid-template-columns: 150px 400px auto 600px;
   grid-template-rows: 135px auto;
@@ -38,72 +38,72 @@ body > div {
 }
 
 .rightp {
-display: flex;
-align-items: center;
-gap: 0.5rem;
-margin-left: 200px;
-}
-
-.rightp a:first-child>button{
-  background-color:#243833;
-  color: white;
-}
-
-.dropbtn {
- background-color:rgb(36, 56, 51);
- color: white;
- padding: 16px;
- font-size: 16px;
- border: none;
- cursor: pointer;
- border-radius: 15px;
-}
-
-.dropbtn:hover, .dropbtn:focus {
- background-color: rgb(36, 56, 51);
-}
-
-.dropdown {
- position: relative;
- display: inline-block;
-}
-
-.dropdown-content {
- display: none;
- position: absolute;
- background-color: #f1f1f1;
- min-width: 160px;
- overflow: auto;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
-}
-
-.dropdown-content a {
- color: black;
-padding: 12px 16px;
- text-decoration: none;
-display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-
-.botonHeader {
-  padding: 0.7rem 1.4rem;
-  border: 0;
-  border-radius: 30px;
-  background-color: #243833;
-  font-size: 100%;
-  color: white;
-}
-
-
-.imgces {
-  width: 40px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  }
   
-}
+  .rightp a:first-child>button{
+    background-color:#243833;
+    color: white;
+  }
+  
+  .dropbtn {
+   background-color:rgb(36, 56, 51);
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   border-radius: 15px;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+   background-color: rgb(36, 56, 51);
+  }
+  
+  .dropdown {
+   position: relative;
+   display: inline-block;
+  }
+  
+  .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   overflow: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  }
+  
+  .dropdown-content a {
+   color: black;
+  padding: 12px 16px;
+   text-decoration: none;
+  display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  
+  .botonHeader {
+    padding: 0.7rem 1.4rem;
+    border: 0;
+    border-radius: 30px;
+    background-color: #243833;
+    font-size: 100%;
+    color: white;
+  }
+  
+  
+  .imgces {
+    width: 40px;
+    
+  }
 @media screen and (max-width: 880px) {
 
   .boton1 {
@@ -124,6 +124,70 @@ display: block;
   }
 
 }
+
+@media screen  and (max-width: 1035px){
+  
+  .mgdiv {
+    display: none;
+  }
+
+  .rightp {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 150px auto 100px;
+  }
+
+
+
+}
+
+.dropbtn-r {
+  background-color: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-r {
+  float: right;
+  position: relative;
+  display: none;
+}
+
+@media screen and (max-width: 1035px) {
+
+.dropdown-r {
+	display: inline-block;
+}
+
+}
+
+.dropdown-content-r {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  background-color: #f1f1f1;
+  min-width: 170px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content-r a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-r a:hover {background-color: #ddd;}
+
+.show-r {display: block;}
 
 /*------------BODY------------*/
 

@@ -3,14 +3,17 @@
 * {
   font-family: 'Imbue', sans-serif;
   margin: 0;
-  /*outline: 1px solid red;*/
+  padding: 0;
 }
+
+/*------------HEAD------------*/
 
 .grid {
   display: grid;
   grid-template-columns: 150px 400px auto 600px;
   grid-template-rows: 135px auto;
   align-items: center;
+  box-shadow: 0px 5px 10px grey;
 }
 
 .mgtxt {
@@ -44,14 +47,15 @@
   }
   
   .dropbtn {
-    background-color:rgb(36, 56, 51);
-    color: white;
-    padding: 11px 25px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-   }
+   background-color:rgb(36, 56, 51);
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   border-radius: 15px;
+  }
+  
   .dropbtn:hover, .dropbtn:focus {
    background-color: rgb(36, 56, 51);
   }
@@ -153,9 +157,9 @@
 
 @media screen and (max-width: 1035px) {
 
-.dropdown-r {
-	display: inline-block;
-}
+    .dropdown-r {
+        display: inline-block;
+    }
 
 }
 
@@ -182,27 +186,57 @@
 
 .show-r {display: block;}
 
-.flex{
-    text-align: center;
-}
-.flex h2{
-    font-size: 300%;
-}
-#productosContainer{
+/*------------BODY------------*/
+
+.flex-priv {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    align-items:center;
-    justify-content: center;
+    flex-direction: row;
+    font-size: 35px;
+    text-align: justify;
+  }
+  
+  .flex-priv-left {
+    padding: 100px;
+    flex: 50%;
     
   }
-  .producto{
-    display: flex;
-    gap: 20px;
-
+  
+  .flex-priv-right {
+    padding: 100px;
+    flex: 50%;
   }
 
+  @media (max-width: 1035px) {
+    .flex-priv {
+      flex-direction: column;
+    }
+  }
+
+  .card-pr {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    border-radius: 20px;
+    margin: 0 auto; /* Centra horizontalmente la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .card-pr:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container-pr {
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+/*------------FOTE------------*/
+  
   .fot{
     display: flex;
     flex-direction: row;
@@ -213,7 +247,6 @@
     background-color: #243833;
     padding: 20px;
     text-align: center;
-
     left: 0;
     right: 0;
     color: white;
@@ -294,4 +327,3 @@ height: 50px;
 .barra {
 font-size: 700%;
 }
-
