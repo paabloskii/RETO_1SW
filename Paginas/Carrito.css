@@ -6,7 +6,7 @@
   /*outline: 1px solid red;*/
 }
 
-.gridcontainer {
+.grid {
   display: grid;
   grid-template-columns: 150px 400px auto 600px;
   grid-template-rows: 135px auto;
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-left: 200px;
+  justify-content: center;
   }
   
   .rightp a:first-child>button{
@@ -98,7 +98,6 @@
     width: 40px;
     
   }
-
 @media screen and (max-width: 880px) {
 
   .boton1 {
@@ -119,6 +118,71 @@
   }
 
 }
+
+@media screen  and (max-width: 1035px){
+  
+  .mgdiv {
+    display: none;
+  }
+
+  .rightp {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 150px auto 100px;
+  }
+
+
+
+}
+
+.dropbtn-r {
+  background-color: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-r {
+  float: right;
+  position: relative;
+  display: none;
+}
+
+@media screen and (max-width: 1035px) {
+
+.dropdown-r {
+	display: inline-block;
+}
+
+}
+
+.dropdown-content-r {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  background-color: #f1f1f1;
+  min-width: 170px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content-r a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-r a:hover {background-color: #ddd;}
+
+.show-r {display: block;}
+
 .flex{
     text-align: center;
 }
