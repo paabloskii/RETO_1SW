@@ -207,7 +207,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
-
+text-align: center;
   }
   .fotoprod{
     width: 100px;

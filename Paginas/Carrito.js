@@ -14,7 +14,7 @@
 
 // }
 async function crearPedido() {
-    await fetch("http://localhost:4000/API/pedidos/crear", {
+    await fetch("http://localhost:4000/API/pedidosUser/crear", {
         method: 'POST',
 
         headers: {

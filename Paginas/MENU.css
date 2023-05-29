@@ -188,6 +188,7 @@
   display: flex;
 justify-content: center;
 
+
 }
 h2 {
   margin-bottom: 10px;
@@ -210,9 +211,21 @@ h3 {
 p {
   margin: 0;
 }
-.fotoprod {
-width: 300px;
-height: 200px;
+
+.fotoprod{
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.nombre_prod{
+  font-size: 30px;
+}
+.desc{
+  font-size: 20px;
+}
+.precio{
+  font-size: 20px;
 }
 .container {
   display: flex;
@@ -229,7 +242,12 @@ height: 200px;
 .bodycarta{
   min-height:100vh;
 }
-
+.fotoprod{
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  
+}
 /*-------------------------------------------------*/
 
 
