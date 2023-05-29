@@ -47,8 +47,10 @@ async function registerUser() {
          
         } else {
             document.getElementById('error-message').style.display = 'block';
+            
         }
     } else {
+        window.alert("Invalid Credentials")
         document.getElementById('name').value = '';
         document.getElementById('last_name').value = '';
         document.getElementById('email').value = '';

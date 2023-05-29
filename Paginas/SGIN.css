@@ -230,6 +230,14 @@ input[type="text"], input[type="password"] {
     width: 95%;
     font-size: 15px;
   }
+  input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 95%;
+    font-size: 15px;
+  }
 
 input[type="submit"] {
     background-color: #243833;
