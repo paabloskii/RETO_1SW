@@ -22,5 +22,6 @@ function myFunction() {
     localStorage.setItem("login","false");
     localStorage.removeItem("usuario");
     localStorage.removeItem("carrito");
+    localStorage.removeItem("nombre")
     location.reload();
   }

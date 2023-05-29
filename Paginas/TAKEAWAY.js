@@ -60,6 +60,7 @@ function addtocart(productId) {
 
 }
 function agregarCarrito(id_prod){
+    if(localStorage.getItem('login')=== 'true'){
     if (localStorage.getItem('carrito')!= null) {
         var cont = localStorage.getItem('carrito')
         cont += ','+ id_prod;
@@ -69,6 +70,9 @@ function agregarCarrito(id_prod){
         localStorage.setItem('carrito',id_prod)
         alert("Product Added")
     }
+}else{
+    window.alert("Sign In first")
+}
     
 }
 

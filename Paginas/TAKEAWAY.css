@@ -45,14 +45,15 @@
   }
   
   .dropbtn {
-   background-color:rgb(36, 56, 51);
-   color: white;
-   padding: 16px;
-   font-size: 16px;
-   border: none;
-   cursor: pointer;
-   border-radius: 15px;
-  }
+    background-color:rgb(36, 56, 51);
+    color: white;
+
+    padding: 11px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+   }
   
   .dropbtn:hover, .dropbtn:focus {
    background-color: rgb(36, 56, 51);
@@ -92,6 +93,7 @@
     background-color: #243833;
     font-size: 100%;
     color: white;
+    cursor:pointer;
   }
   
   
@@ -117,6 +119,7 @@
   .imgces {
     display: none;
   }
+  
 
 }
 
@@ -134,7 +137,12 @@
     grid-template-columns: 150px auto 100px;
   }
 
-
+  .container{
+    overflow: scroll;
+  }
+#bebidasContainer{
+overflow: scroll;
+}
 
 }
 
@@ -158,6 +166,7 @@
 .dropdown-r {
 	display: inline-block;
 }
+
 
 }
 
@@ -250,8 +259,10 @@
 }
 
 .container{
+  margin-top: 10px;
  display: flex;
  flex-direction: column;
+ gap: 80px;
 }
 
 .flex_item {
@@ -287,7 +298,22 @@
   cursor: pointer;
 margin-top: 10px;
 }
-
+.addbutton{
+  padding: 15px 50px;
+  border-radius: 8px;
+  background-color: #243833;
+  color: white;
+  font-size: 20px;
+}
+.nombre_prod{
+  font-size: 30px;
+}
+.desc{
+  font-size: 20px;
+}
+.precio{
+  font-size: 20px;
+}
 .add-to-cart:hover {
   background-color: rgb(80, 88, 86);
 }
@@ -295,35 +321,61 @@ margin-top: 10px;
 .container h2{
   width: 100%;
   text-align: center;
+  font-size: 50px;
+  margin-block: 20px;
+}
+.container{
+  padding-inline: 20px;
+  align-items: center;
+  
+}
+.producto{
+  text-align: center;
+  line-height: 40px;
+  transition: transform .2s;
+}
+.producto:hover{
+  transform: scale(1.05);
 }
 
 #bebidasContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 1rem;
-  overflow-x: scroll;
+  gap: 7rem;
+
+  
 }
 #saladosContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 1rem;
-  overflow-x: scroll;
+  gap: 7rem;
+  
 }
 
 #reposteriaContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 1rem;
-  overflow-x: scroll;
+  gap: 7rem;
+  
 }
-
+.fotoprod{
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  object-fit: cover;
+}
 .purchase{
   margin-top: 50px;
-  padding: 20px 40px;
-
+  padding: 15px 55px;
+  margin-left: 90%;
+  background-color: #243833;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
  
 }
 
@@ -344,7 +396,7 @@ margin-top: 10px;
     left: 0;
     right: 0;
     color: white;
-    height: 118px;
+  
 }
 
 .col {
