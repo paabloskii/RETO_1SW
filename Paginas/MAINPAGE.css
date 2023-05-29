@@ -288,6 +288,20 @@
   background-position: center;
 }
 
+.slide:nth-of-type(4) {
+  background-image: url(../IMAGENES/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide:nth-of-type(5) {
+  background-image: url(../IMAGENES/coffee-2562274_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .slide_buttons {
   left: 0;
   position: absolute;
@@ -313,7 +327,7 @@ a.slide_btn {
 
 .directional_nav {
   height: 340px;
-  margin: 0 auto;
+  margin: 0 50%;
   max-width: 940px;
   position: relative;
   top: -340px;
@@ -383,7 +397,7 @@ a.slide_btn {
     color: white;
     background-color: rgb(36, 56, 51);
     font-size: xx-large;
-cursor: pointer;
+    cursor: pointer;
   }
 
   .marco-circular {
