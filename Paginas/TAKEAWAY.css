@@ -136,13 +136,6 @@
     grid-template-columns: 150px auto 100px;
   }
 
-  .container{
-    overflow: scroll;
-  }
-#bebidasContainer{
-overflow: scroll;
-}
-
 }
 
 .dropbtn-r {
@@ -264,11 +257,34 @@ overflow: scroll;
   background-image: url(../IMAGENES/fondo.jpg);
 }
 
-.container{
-  margin-top: 10px;
- display: flex;
- flex-direction: column;
- gap: 80px;
+.flex-fot {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  gap: 7rem;
+}
+
+.flex-1 {
+  padding: 10px;
+  flex: 33.3%;
+}
+
+.flex-2 {
+  padding: 10px;
+  flex: 33.3%;
+}
+
+.flex-3 {
+  padding: 10px;
+  flex: 33.3%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 1035px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 .flex_item {
