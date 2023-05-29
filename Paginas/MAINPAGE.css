@@ -4,6 +4,7 @@
   font-family: 'Imbue', sans-serif;
   margin: 0;
   padding: 0;
+ 
 }
 
 .grid {
@@ -91,6 +92,7 @@
     background-color: #243833;
     font-size: 100%;
     color: white;
+    cursor:pointer;
   }
   
   
@@ -381,7 +383,7 @@ a.slide_btn {
     color: white;
     background-color: rgb(36, 56, 51);
     font-size: xx-large;
-
+cursor: pointer;
   }
 
   .marco-circular {

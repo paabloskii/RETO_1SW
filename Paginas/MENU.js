@@ -23,9 +23,9 @@ function fetchProductosMenu() {
             productoItem.innerHTML = `
                 <div class="producto">
                 <img src="${producto.photo}" class ="fotoprod">
-                  <h3>${producto.nombre_prod}</h3>
-                  <p>${producto.descripcion}</p>
-                  <p>Precio: ${producto.precio}</p>
+            <h3 class="nombre_prod">${producto.nombre_prod}</h3>
+            <p class="desc">${producto.descripcion}</p>
+            <p class="precio">Precio: ${producto.precio}</p>
   
                 </div>
                 `;

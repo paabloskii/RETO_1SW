@@ -54,11 +54,13 @@ async function crearInfoped() {
 
         id_productos = await conexioncarrito("producto/buscar?id=" + productos[index])
         console.log(id_productos)
+        console.log(id_productos[index])
         containerproductos.innerHTML += `
     <div class="producto">
-    <h3>${id_productos[0]["nombre_prod"]}</h3>
-    <p>${id_productos[0]["descripcion"]}</p>
-    <p>Precio: ${id_productos[0]["precio"]}</p>
+    <img src="${id_productos[0]["photo"]}" class ="fotoprod">
+            <h3 class="nombre_prod">${id_productos[0]["nombre_prod"]}</h3>
+            <p class="desc">${id_productos[0]["descripcion"]}</p>
+            <p class="precio">Precio: ${id_productos[0]["precio"]}</p>
     <button class="boton" onclick="eliminarProductos(${id_productos[0]["id_producto"]})">Eliminar</button>
     </div>
     `
@@ -68,7 +70,7 @@ async function crearInfoped() {
         // Mostrar precio total
        
     }
-    containerproductos.innerHTML += `<p>Precio total: ${precioTotal}</p>`;
+    containerproductos.innerHTML += `<p class="precioTotal"><b>Precio total: ${precioTotal}€</b></p>`;
 }
 
 function eliminarProductos(id) {
@@ -109,6 +111,11 @@ function eliminarProductos(id) {
     location.reload();
 
 }
+async function eliminarCarrito(){
+    localStorage.removeItem('carrito')
+    location.reload();
+}
 document.addEventListener('DOMContentLoaded', async () => {
     await crearInfoped();
 });
+
