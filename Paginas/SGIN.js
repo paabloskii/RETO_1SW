@@ -15,10 +15,14 @@ document.getElementById('login-form').addEventListener('submit', async function 
 });
 
 function botonesLogin() {
+   
     if (localStorage.getItem("login") == "true") {
         document.getElementById('sign_in').style.display = 'none';
         document.getElementById('sign_up').style.display = 'none';
         document.querySelector('.dropdown').style.display = 'block';
+        var profileButton = document.getElementById("dropbtn");
+        profileButton.textContent = localStorage.getItem("nombre");
+        
     }
 }
 
@@ -63,6 +67,7 @@ async function conexionlogin(ruta) {
 
         localStorage.setItem("login", "true");
         localStorage.setItem("usuario",jsonData[0]["id_cliente"]);
+        localStorage.setItem("nombre",jsonData[0]["nombre_cliente"])
     }
     
 

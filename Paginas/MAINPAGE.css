@@ -44,7 +44,7 @@
     color: white;
   }
   
-  .dropbtn {
+#dropbtn {
    background-color:rgb(36, 56, 51);
    color: white;
    padding: 11px 25px;
