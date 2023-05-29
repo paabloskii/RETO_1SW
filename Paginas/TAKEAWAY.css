@@ -45,14 +45,14 @@
   }
   
   .dropbtn {
-    background-color:rgb(36, 56, 51);
-    color: white;
-    padding: 11px 25px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-   }
+   background-color:rgb(36, 56, 51);
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   border-radius: 15px;
+  }
   
   .dropbtn:hover, .dropbtn:focus {
    background-color: rgb(36, 56, 51);
@@ -92,7 +92,6 @@
     background-color: #243833;
     font-size: 100%;
     color: white;
-    cursor:pointer;
   }
   
   
@@ -118,7 +117,6 @@
   .imgces {
     display: none;
   }
-  
 
 }
 
@@ -135,6 +133,8 @@
   .grid {
     grid-template-columns: 150px auto 100px;
   }
+
+
 
 }
 
@@ -158,14 +158,6 @@
 .dropdown-r {
 	display: inline-block;
 }
-.container{
-  overflow: scroll;
-}
-#bebidasContainer{
-overflow: scroll;
-}
-
-
 
 }
 
@@ -257,34 +249,9 @@ overflow: scroll;
   background-image: url(../IMAGENES/fondo.jpg);
 }
 
-.flex-fot {
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  text-align: center;
-  gap: 7rem;
-}
-
-.flex-1 {
-  padding: 10px;
-  flex: 33.3%;
-}
-
-.flex-2 {
-  padding: 10px;
-  flex: 33.3%;
-}
-
-.flex-3 {
-  padding: 10px;
-  flex: 33.3%;
-}
-
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 1035px) {
-  .flex-container {
-    flex-direction: column;
-  }
+.container{
+ display: flex;
+ flex-direction: column;
 }
 
 .flex_item {
@@ -320,22 +287,7 @@ overflow: scroll;
   cursor: pointer;
 margin-top: 10px;
 }
-.addbutton{
-  padding: 15px 50px;
-  border-radius: 8px;
-  background-color: #243833;
-  color: white;
-  font-size: 20px;
-}
-.nombre_prod{
-  font-size: 30px;
-}
-.desc{
-  font-size: 20px;
-}
-.precio{
-  font-size: 20px;
-}
+
 .add-to-cart:hover {
   background-color: rgb(80, 88, 86);
 }
@@ -343,61 +295,35 @@ margin-top: 10px;
 .container h2{
   width: 100%;
   text-align: center;
-  font-size: 50px;
-  margin-block: 20px;
-}
-.container{
-  padding-inline: 20px;
-  align-items: center;
-  
-}
-.producto{
-  text-align: center;
-  line-height: 40px;
-  transition: transform .2s;
-}
-.producto:hover{
-  transform: scale(1.05);
 }
 
 #bebidasContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 7rem;
-
-  
+  gap: 1rem;
+  overflow-x: scroll;
 }
 #saladosContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 7rem;
-  
+  gap: 1rem;
+  overflow-x: scroll;
 }
 
 #reposteriaContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 7rem;
-  
+  gap: 1rem;
+  overflow-x: scroll;
 }
-.fotoprod{
-  width: 500px;
-  height: 600px;
-  border-radius: 10px;
-  object-fit: cover;
-}
+
 .purchase{
   margin-top: 50px;
-  padding: 15px 55px;
-  margin-left: 90%;
-  background-color: #243833;
-  color: white;
-  border-radius: 15px;
-  font-size: 20px;
-  margin-bottom: 15px;
+  padding: 20px 40px;
+
  
 }
 
@@ -418,7 +344,7 @@ margin-top: 10px;
     left: 0;
     right: 0;
     color: white;
-  
+    height: 118px;
 }
 
 .col {
