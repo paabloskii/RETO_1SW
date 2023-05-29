@@ -1,0 +1,56 @@
+
+
+/* Intranet.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(209, 209, 209)
+}
+
+h2 {
+    color: rgb(36, 56, 51);
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(36, 56, 51);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(36, 56, 51);
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: rgb(36, 56, 51);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid rgb(36, 56, 51);
+    text-align: left;
+}
+
+th {
+    background-color: rgb(36, 56, 51);
+    color: white;
+}

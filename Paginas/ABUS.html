@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ABUS.css">
+    <link rel="shortcut icon" href="../IMAGENES/logopweb.png">
+    <script src="SGIN.js"></script>
+    <script src="Profile.js"></script>
+    <title>ABOUT US</title>
+</head>
+<body onload="botonesLogin()">
+    <div class="grid">
+        <div><a href="MAINPAGE.html"><img src="../IMAGENES/logo1.png" style="width: 130px; margin-left: 10px;"></a></div>
+        <div class="mgdiv">
+            <a class="mgtxt" href="MENU.html">Menu</a>
+          <a href="TAKEAWAY.html" class="mgtxt">Take Away</a>
+          <a href="ABUS.html" class="mgtxt">About Us</a>
+        </div>
+        <div><a></a></div>
+        <div class="rightp">
+          <a href="SGIN-EMP.html" id="sign_inemp"><button class="botonHeader">Zona empleado</button></a>
+            <a href="SGIN.html" id="sign_in"><button  class="botonHeader">Sign in</button></a>
+            <a href="SGUP.html"  id="sign_up" ><button class="botonHeader">Sign up</button></a>
+            <div class="dropdown"  style="display: none;">
+                <button onclick="myFunction()" class="dropbtn">Perfil</button>
+                <div id="profile" class="dropdown-content">
+                  <a href="#datos">Datos</a>
+                  <a href="#logout" onclick="logout()">Cerrar Sesion</a>
+                </div>
+              </div>
+          <a href="Carrito.html"><img class="imgces" src="../IMAGENES/bolsa-de-la-compra.png"></a>
+        </div>
+        <div class="dropdown-r">
+          <button onclick="myFunctionr()" class="dropbtn-r">&#9776;</button>
+          <div id="myDropdown-r" class="dropdown-content-r">
+            <a href="../Paginas/MENU.html">MENU</a>
+            <a href="../Paginas/TAKEAWAY.html">TAKE AWAY</a>
+            <a href="../Paginas/ABUS.html">ABOUT US</a>
+            <a href="../Paginas/SGIN-EMP.html">EMPLOYEE ZONE</a>
+            <a href="../Paginas/SGIN.html">SIGN IN</a>
+            <a href="../Paginas/SGUP.html">SING UP</a>
+            <a href="../Paginas/Carrito.html">CART</a>
+            <div class="dropdown"  style="display: none;">
+              <button onclick="myFunction()" class="dropbtn">Perfil</button>
+              <div id="profile" class="dropdown-content">
+                <a href="#datos">Datos</a>
+                <a href="#logout" onclick="logout()">Cerrar Sesion</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="diven">
+        <section class="about-section">
+            <h1 style="color: white;">About Us</h1>
+            <p style="color: white; margin-inline: -50px;">At Café By Pablo's, we are passionate about providing a unique experience to each of our customers. We are more than just a coffee shop; we are a place where aromas, flavors, and smiles come together to create special moments.</p>
+        </section>
+        <section class="menu-section">
+            <div class="menu-item1">
+                <h3>Specialty Coffee</h3>
+                <p>Indulge in our carefully crafted specialty coffees made with love and attention to detail.</p>
+            </div>
+            <div class="menu-item1">
+                <h3>Delicious Treats</h3>
+                <p>Explore our menu of delicious treats, including pastries, cakes, and tempting desserts.</p>
+            </div>
+            <div class="menu-item1">
+                <h3>Healthy Options</h3>
+                <p>Discover our selection of fresh salads and nutritious options for a guilt-free dining experience.</p>
+            </div>
+        </section>
+    </div>
+	<h1 class="tit-maps">BEST SELLERS</h1>
+    <div id="photo-collage">
+		<div class="collage columns clearfix">
+		 <div class="col-33"><div class="photo-wrapper">
+		  <div id="f1"><span class="scale-caption">
+		   <span class="fg-white">BACON SANDWICH</span>
+		  </span></div>
+		 </div></div>
+		 <div class="col-33"><div class="photo-wrapper">
+		  <div id="f2"><span class="scale-caption">
+		   <span class="fg-white">OREO SHAKE</span>
+		  </span></div>
+		 </div></div>
+		 <div class="col-33"><div class="photo-wrapper">
+		  <div id="f3"><span class="scale-caption">
+		   <span class="fg-white">BIKINI SANDWICH</span>
+		  </span></div>
+		 </div></div>
+		</div>
+	</div>
+	<h1 class="tit-maps">OUR LOCATIONS</h1>
+	<section class="menu-section">
+		<div id="map" class="menu-item2">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.068585654671!2d-73.98585092350756!3d40.672457740034616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25afe2199f57f%3A0x72111aae84a49493!2s325%205th%20Ave%2C%20Brooklyn%2C%20NY%2011215%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1684505269556!5m2!1ses!2ses" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div id="map" class="menu-item2">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.759451276204!2d-73.99074302350562!3d40.723311636922254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25983852aa771%3A0x3786aaa202093a33!2s76%20E%201st%20St%2C%20New%20York%2C%20NY%2010009%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1684505671848!5m2!1ses!2ses" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div id="map" class="menu-item2">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.117224185971!2d-73.99445018255616!3d40.7594464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2585251c32309%3A0x668278fb02a81cea!2s611%209th%20Ave%2C%20New%20York%2C%20NY%2010036%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1684505744785!5m2!1ses!2ses" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
+  <a href="../Paginas/ADVACANTE.html" style="text-decoration: none;"><button class="boton">WORK WITH US</button></a>
+    <div class="fot">
+        <div class="col">
+            <span class="txt"><u><b>by<br>Pablo's</b></u></span>
+        </div>
+        <div class="barra">|</div>
+        <div class="colcentral">
+            <div class="txtprimero">
+                <span class="txtcentro"><u><b>Legal</b></u></span>
+            </div>
+
+            <div class="txtpeque">
+                <a href="../Paginas/PRIVCOM.html" style="text-decoration: none; color: white;"><span class="txtlegal">Private committee area</span></a>
+                <span class="txtlegal1">Cookies Policy</span>
+            </div>
+        </div>
+        <div class="barra">|</div>
+        <div class="col1">
+            <div class="txt1col">
+                <span class="txt1"><u><b>Follow us</b></u></span>
+            </div>
+            <div class="logosfooter">
+
+                <a><img class="logoinsta" src="../IMAGENES/instagram.png"></a>
+                <a><img class="logowhats" src="../IMAGENES/whatsapp (1).png"></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+              <script>
+                $('.slider').each(function() {
+            var $this = $(this);
+            var $group = $this.find('.slide_group');
+            var $slides = $this.find('.slide');
+            var bulletArray = [];
+            var currentIndex = 0;
+            var timeout;
+            
+            function move(newIndex) {
+              var animateLeft, slideLeft;
+              
+              advance();
+              
+              if ($group.is(':animated') || currentIndex === newIndex) {
+                return;
+              }
+              
+              bulletArray[currentIndex].removeClass('active');
+              bulletArray[newIndex].addClass('active');
+              
+              if (newIndex > currentIndex) {
+                slideLeft = '100%';
+                animateLeft = '-100%';
+              } else {
+                slideLeft = '-100%';
+                animateLeft = '100%';
+              }
+              
+              $slides.eq(newIndex).css({
+                display: 'block',
+                left: slideLeft
+              });
+              $group.animate({
+                left: animateLeft
+              }, function() {
+                $slides.eq(currentIndex).css({
+                  display: 'none'
+                });
+                $slides.eq(newIndex).css({
+                  left: 0
+                });
+                $group.css({
+                  left: 0
+                });
+                currentIndex = newIndex;
+              });
+            }
+            
+            function advance() {
+              clearTimeout(timeout);
+              timeout = setTimeout(function() {
+                if (currentIndex < ($slides.length - 1)) {
+                  move(currentIndex + 1);
+                } else {
+                  move(0);
+                }
+              }, 4000);
+            }
+            
+            $('.next_btn').on('click', function() {
+              if (currentIndex < ($slides.length - 1)) {
+                move(currentIndex + 1);
+              } else {
+                move(0);
+              }
+            });
+            
+            $('.previous_btn').on('click', function() {
+              if (currentIndex !== 0) {
+                move(currentIndex - 1);
+              } else {
+                move(3);
+              }
+            });
+            
+            $.each($slides, function(index) {
+              var $button = $('<a class="slide_btn">&bull;</a>');
+              
+              if (index === currentIndex) {
+                $button.addClass('active');
+              }
+              $button.on('click', function() {
+                move(index);
+              }).appendTo('.slide_buttons');
+              bulletArray.push($button);
+            });
+            
+            advance();
+          });
+              </script>
+              <script>
+                function myFunctionr() {
+                  document.getElementById("myDropdown-r").classList.toggle("show-r");
+                }
+                
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn-r')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content-r");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show-r')) {
+                        openDropdown.classList.remove('show-r');
+                      }
+                    }
+                  }
+                }
+                </script>
+</body>
+</html>

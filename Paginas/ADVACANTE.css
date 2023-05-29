@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap');
+
+* {
+  font-family: 'Imbue', sans-serif;
+  margin: 0;
+}
+
+/*-----------HEADER-----------*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px 400px auto 600px;
+  grid-template-rows: 135px auto;
+  align-items: center;
+}
+
+.mgtxt {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+}
+.mgtxt:hover {
+  color: black;
+  text-decoration: none;
+  
+}
+.mgtxt:active {
+  color: black;
+  text-decoration: none;
+}
+.mgdiv {
+  font-size: 30px;
+}
+
+.rightp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  }
+  
+  .rightp a:first-child>button{
+    background-color:#243833;
+    color: white;
+  }
+  
+  .dropbtn {
+    background-color:rgb(36, 56, 51);
+    color: white;
+    padding: 11px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+   }
+  .dropbtn:hover, .dropbtn:focus {
+   background-color: rgb(36, 56, 51);
+  }
+  
+  .dropdown {
+   position: relative;
+   display: inline-block;
+  }
+  
+  .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   overflow: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  }
+  
+  .dropdown-content a {
+   color: black;
+  padding: 12px 16px;
+   text-decoration: none;
+  display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  
+  .botonHeader {
+    padding: 0.7rem 1.4rem;
+    border: 0;
+    border-radius: 30px;
+    background-color: #243833;
+    font-size: 100%;
+    color: white;
+    cursor:pointer;
+  }
+  
+  .imgces {
+    width: 40px;
+    
+  }
+@media screen and (max-width: 880px) {
+
+  .boton1 {
+    display: none;
+  }
+
+  .boton2 {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .imgces {
+    display: none;
+  }
+
+}
+
+@media screen  and (max-width: 1035px){
+  
+  .mgdiv {
+    display: none;
+  }
+
+  .rightp {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 150px auto 100px;
+  }
+
+
+
+}
+
+.dropbtn-r {
+  background-color: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-r {
+  float: right;
+  position: relative;
+  display: none;
+}
+
+@media screen and (max-width: 1035px) {
+
+.dropdown-r {
+	display: inline-block;
+}
+
+}
+
+.dropdown-content-r {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  background-color: #f1f1f1;
+  min-width: 170px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content-r a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-r a:hover {background-color: #ddd;}
+
+.show-r {display: block;}
+
+/*------------BODY------------*/
+
+.body {
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url(../IMAGENES/hojasFOL.png);
+    background-position: center;
+  }
+
+.flex-job{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+  
+.flex-item-left {
+    padding: 40px;
+    margin-left: 50px;
+    flex: 50%;
+}
+  
+.flex-item-right {
+    padding: 10px;
+    margin-left: 50px;
+    flex: 50%;
+}
+
+@media (max-width: 1035px) {
+  .flex-job {
+    flex-direction: column;
+  }
+}
+
+h2 {
+    color: #333;
+  }
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+.how-to-apply {
+    background-color: #f2f2f2;
+    padding-bottom: 15px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 22px;
+  }
+
+.apply-button {
+    background: rgb(36, 56, 51);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+
+.sep {
+    background-image: linear-gradient(white, #f2f2f2);
+    height: 20px;
+}
+
+footer {
+    color: #fff;
+    padding: 10px;
+    line-height: 30px;
+    text-align: center;
+    background-image: linear-gradient(#f2f2f2, rgb(36, 56, 51));
+    height: 30px;
+  }
+
+.job-description > ul {
+    margin: 10px;
+    font-size: 20px;
+  }
+
+/*-----------FOOTER-----------*/
+
+.fot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    z-index: 999;
+    background-color: #243833;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: white;
+    height: 166px;
+}
+
+.col {
+    flex-grow: 2;
+}
+
+.colcentral {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.txprimero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.txtpeque {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.col1 {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.txt {
+    font-size: 300%;
+}
+
+.txtcentro {
+    font-size: xx-large;
+}
+
+.txtlegal {
+    font-size: x-large;
+}
+
+.txtlegal1 {
+    font-size: x-large;
+}
+
+
+.txt1 {
+    font-size: xx-large;
+}
+
+
+.logosfooter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.logoinsta {
+    width: 50px;
+    height: 50px;
+}
+
+.logowhats {
+    width: 50px;
+    height: 50px;
+}
+
+.barra {
+    font-size: 700%;
+}
