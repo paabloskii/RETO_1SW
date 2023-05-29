@@ -1,13 +1,18 @@
 
 async function registerUser() {
-    const full_name = document.getElementById('name').value;
+    const name = document.getElementById('name').value;
+    const last_name = document.getElementById('last_name').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
 
     const data = {
+        'nombre_cliente': name,
+        'apellido_cliente': last_name,
         'correo_electronico': email,
         'contraseña': password
+
+
     };
 
     async function conexion(ruta) {
@@ -36,13 +41,16 @@ async function registerUser() {
 
         if (response.ok) {
             alert('Registro exitoso');
-            location.replace("http://127.0.0.1:5500/FRONT/RETO_1SW/Paginas/MAINPAGE.html");
+            location.replace("http://127.0.0.1:5500/FRONT/RETO_1SW/Paginas/SGIN.html");
 
-            localStorage.setItem("login", "true");
+       
+         
         } else {
             document.getElementById('error-message').style.display = 'block';
         }
     } else {
+        document.getElementById('name').value = '';
+        document.getElementById('last_name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('password').value = '';
     }

@@ -113,7 +113,11 @@ function eliminarProductos(id) {
 }
 async function eliminarCarrito(){
     localStorage.removeItem('carrito')
+    localStorage.removeItem('carritoTemporal')
     location.reload();
+
+    
+
 }
 document.addEventListener('DOMContentLoaded', async () => {
     await crearInfoped();

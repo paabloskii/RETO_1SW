@@ -99,7 +99,6 @@
             });
     }
 
-    // Función para eliminar un producto
     function eliminarProducto(id) {
         if (confirm('¿Estás seguro de que quieres eliminar este producto?')) {
             fetch('http://localhost:4000/API/producto/eliminar', {
@@ -114,18 +113,14 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
-                        // Mostrar mensaje de éxito
                         showMessage('success-message', 'Producto eliminado exitosamente');
-                        // Actualizar la tabla de productos
                         fetchProductos();
                     } else {
-                        // Mostrar mensaje de error
                         showMessage('error-message', 'Error al eliminar el producto');
                     }
                 })
                 .catch(error => {
                     console.error('Error:', error);
-                    // Mostrar mensaje de error
                     showMessage('error-message', 'Error al eliminar el producto');
                 });
     location.reload(); 

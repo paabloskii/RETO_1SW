@@ -45,15 +45,14 @@
   }
   
   .dropbtn {
-   background-color:rgb(36, 56, 51);
-   color: white;
-   padding: 16px;
-   font-size: 16px;
-   border: none;
-   cursor: pointer;
-   border-radius: 15px;
-  }
-  
+    background-color:rgb(36, 56, 51);
+    color: white;
+    padding: 11px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+   }
   .dropbtn:hover, .dropbtn:focus {
    background-color: rgb(36, 56, 51);
   }
