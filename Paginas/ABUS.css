@@ -312,9 +312,9 @@
   transform: scale(.72) translateX(139%);
  }
 
- .collage .photo-wrapper #f1 {background: url(../IMAGENES/Bacon-Tomato-Grilled-Cheese-Sandwich-Recipe-Pics-10.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f2 {background: url(../IMAGENES/beverage-g0367cead8_640.jpg) center center no-repeat; background-size: cover;}
- .collage .photo-wrapper #f3 {background: url(../IMAGENES/bread-g3f68f6f27_640.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f1 {background: url(../IMAGENES/caramel.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f2 {background: url(../IMAGENES/ice-coffee.jpg) center center no-repeat; background-size: cover;}
+ .collage .photo-wrapper #f3 {background: url(../IMAGENES/Toasted-white-chocolate-mocha.jpg) center center no-repeat; background-size: cover;}
 
 
 .diven {
