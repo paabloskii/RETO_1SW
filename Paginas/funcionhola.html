@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="prueba">
+        <label class="label" for="name">Nombre: </label>
+        <input type="text" id="name" name="name" placeholder="Introduce tu nombre">
+        <button class="" onclick="pruebaNombre()">Enviar</button>
+    </div>
+</body>
+<script>
+    function pruebaNombre(){
+    var prueba = document.getElementById('name').value;
+    localStorage.setItem('nombre', prueba);
+    var n1 = document.getElementById('prueba');
+    n1.innerHTML=`
+    <p>hola ${localStorage.getItem('nombre')}</p>
+    `
+}
+</script>
+</html>
